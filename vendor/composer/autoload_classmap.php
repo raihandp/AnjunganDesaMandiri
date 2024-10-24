@@ -7,7 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\Surat_Digital\\skDomisiliController' => $baseDir . '/app/Http/Controllers/Surat_Digital/skDomisiliController.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
+    'App\\Models\\sk_Domisili' => $baseDir . '/app/Models/sk_Domisili.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',

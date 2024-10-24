@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjungan Desa Mandiri</title>
-    <link rel="icon" href="https://rawapanjang-bojonggede.desa.id/assets/files/data/website-desa-rawapanjang-3201132008/images/logo_pemkab_bogor.png" type="image/png">
+    <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style>
         body {
             margin: 0;
@@ -56,7 +56,7 @@
 <body>
 
 <div class="container">
-    <img src="https://rawapanjang-bojonggede.desa.id/assets/files/data/website-desa-rawapanjang-3201132008/images/logo_pemkab_bogor.png" alt="Logo Desa" />
+    <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" alt="Logo Desa" />
     <h1>Anjungan Desa Mandiri</h1>
     <h2>Desa Rawapanjang<br>Kabupaten Bogor</h2>
 
