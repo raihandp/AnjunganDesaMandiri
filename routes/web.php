@@ -1,11 +1,17 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Surat_Digital\skDomisiliController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/login', [LoginController::class, 'showNikForm'])->name('login.showNikForm');
+Route::post('/login/check-nik', [LoginController::class, 'checkNik'])->name('login.checkNik');
+Route::get('/login/pin/{nik}', [LoginController::class, 'showPinForm'])->name('login.showPinForm');
+Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('login.checkPin');
+
 Route::get('/', function () {
     return view('halaman_utama');
-});
+})->name('halaman_utama');
 
 Route::get('/layanan_digital', function () {
     return view('surat_digital');
