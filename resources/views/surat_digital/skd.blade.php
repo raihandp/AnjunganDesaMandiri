@@ -74,34 +74,35 @@
     <h3>Silahkan isi data yang diperlukan</h3>
 
     <form action="{{ url('/sk-domisili/submit') }}" method="POST">
+        @csrf
         <div class="form-group">
             <label>Nama Lengkap :</label>
-            <input type="text" name="nama_lengkap" required>
+            <input type="text" name="nama_lengkap" value="{{ $warga->nama_lengkap }}" readonly>
         </div>
         <div class="form-group">
             <label>NIK / No. KTP :</label>
-            <input type="text" name="nik" required>
+            <input type="text" name="nik" value="{{ $warga->nik }}" readonly>
         </div>
         <div class="form-group">
             <label>Tempat Lahir :</label>
-            <input type="text" name="tempat_lahir" required>
+            <input type="text" name="tempat_lahir" value="{{ $warga->tempat_lahir }}" readonly>
         </div>
         <div class="form-group">
             <label>Tanggal Lahir :</label>
-            <input type="date" name="tanggal_lahir" required>
+            <input type="date" name="tanggal_lahir" value="{{ $warga->tanggal_lahir }}" readonly>
         </div>
         <hr>
         <div class="form-group">
             <label>Alamat / Tempat Tinggal :</label>
-            <input type="text" name="alamat" required>
+            <input type="text" name="alamat" value="{{ $warga->alamat }}" readonly>
         </div>
         <div class="form-group">
             <label>RT:</label>
-            <input type="number" name="rt" required>
+            <input type="number" name="rt" value="{{ $warga->rt }}" readonly>
         </div>
         <div class="form-group">
             <label>RW:</label>
-            <input type="number" name="rw" required>
+            <input type="number" name="rw" value="{{ $warga->rw }}" readonly>
         </div>
         <hr>
         <div class="form-group">
