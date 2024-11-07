@@ -15,7 +15,7 @@ Trisna - Frontend Development & Sosialisasi
 2. Design UI/UX agar lebih menarik & mudah dipahami oleh warga
 3. Bantu update list surat2 yang dibutuhkan (menunggu kunjungan ke rawapanjang)
 4. Buat dokumentasi (User Manual, Developer Guide)
-
+<br><br>
 
 ## Link & Other Resources
 Gambaran fisik Anjungan Desa Mandiri<br>
