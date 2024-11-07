@@ -5,17 +5,6 @@ Anjungan Desa Mandiri (ADM) adalah sebuah sistem dibangun untuk membantu pengelo
 <br><br><br>
 
 ## Job Description
-Raihan - Backend Development
-1. Buat design dasar kebutuhan aplikasi
-2. Rancang database, juga buat ERD & DFD
-3. Design API untuk login, input data surat, verifikasi, dan status surat
-
-Trisna - Frontend Development & Sosialisasi
-1. Buat diagram UML beserta deskripsinya (Use case, Class, Sequence, Activity)
-2. Design UI/UX agar lebih menarik & mudah dipahami oleh warga
-3. Bantu update list surat2 yang dibutuhkan (menunggu kunjungan ke rawapanjang)
-4. Buat dokumentasi (User Manual, Developer Guide)
-<br><br><br>
 
 ## Link & Other Resources
 Gambaran fisik Anjungan Desa Mandiri<br><br>
