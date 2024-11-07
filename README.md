@@ -5,10 +5,19 @@
 Tulis deskripsi di sini, manfaat dari adanya aplikasi ini
 
 ## Job Description
-Penjelasan pembagian tugas di sini
+Raihan - Backend Development
+1. Buat design dasar kebutuhan aplikasi
+2. Rancang database, juga buat ERD & DFD
+3. Design API untuk login, input data surat, verifikasi, dan status surat
+
+Trisna - Frontend Development & Sosialisasi
+1. Buat diagram UML beserta deskripsinya (Use case, Class, Sequence, Activity)
+2. Design UI/UX agar lebih menarik & mudah dipahami oleh warga
+3. Bantu update list surat2 yang dibutuhkan (menunggu kunjungan ke rawapanjang)
+4. Buat dokumentasi (User Manual, Developer Guide)
+
 
 ## Link & Other Resources
-<br>
 Gambaran fisik Anjungan Desa Mandiri<br>
 <img src="https://opendesa.id/wp-content/uploads/2023/04/Sayembara-442x1024.jpg" height="300"><img src="https://th.bing.com/th/id/OIP.5nzuo5yM2dvZVdu-UOwbugHaE8?w=271&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" height="300">
 <br><br>
