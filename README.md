@@ -5,17 +5,13 @@ Anjungan Desa Mandiri (ADM) adalah sebuah sistem dibangun untuk membantu pengelo
 <br><br><br>
 
 ## Job Description
-Raihan - Backend Development
-1. Buat design dasar kebutuhan aplikasi
-2. Rancang database, juga buat ERD & DFD
-3. Design API untuk login, input data surat, verifikasi, dan status surat
+1. Buat proposal
+2. Buat Mockup anjungan
+3. coding data dummy
+4. present ke kantor desa
+5. setelah programnya udah oke, program kita di integrasi ke database desa
+6. uji coba dengan data warga desa
 
-Trisna - Frontend Development & Sosialisasi
-1. Buat diagram UML beserta deskripsinya (Use case, Class, Sequence, Activity)
-2. Design UI/UX agar lebih menarik & mudah dipahami oleh warga
-3. Bantu update list surat2 yang dibutuhkan (menunggu kunjungan ke rawapanjang)
-4. Buat dokumentasi (User Manual, Developer Guide)
-<br><br><br>
 
 ## Link & Other Resources
 Gambaran fisik Anjungan Desa Mandiri<br><br>
@@ -26,3 +22,4 @@ Link Figma >> https://www.figma.com/design/0zTsgWDqvTnpMipozKDSaS/Anjungan-Desa-
 Website Desa Rawapanjang >> https://rawapanjang-desa.id/
 <br>
 Website Desa Digital Kabupaten Bogor >> https://desadigital.bogorkab.go.id/index.php?pgs=SRV
+<br>
