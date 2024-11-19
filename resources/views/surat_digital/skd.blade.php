@@ -76,12 +76,12 @@
     <form action="{{ url('/sk-domisili/submit') }}" method="POST">
         @csrf
         <div class="form-group">
-            <label>Nama Lengkap :</label>
-            <input type="text" name="nama_lengkap" value="{{ $warga->nama_lengkap }}" readonly>
-        </div>
-        <div class="form-group">
             <label>NIK / No. KTP :</label>
             <input type="text" name="nik" value="{{ $warga->nik }}" readonly>
+        </div>
+        <div class="form-group">
+            <label>Nama Lengkap :</label>
+            <input type="text" name="nama_lengkap" value="{{ $warga->nama_lengkap }}" readonly>
         </div>
         <div class="form-group">
             <label>Tempat Lahir :</label>
