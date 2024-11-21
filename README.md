@@ -9,8 +9,9 @@ Anjungan Desa Mandiri (ADM) adalah sebuah sistem dibangun untuk membantu pengelo
 2. Buat Mockup anjungan
 3. coding data dummy
 4. present ke kantor desa
-5. setelah programnya udah oke, program kita di integrasi ke database desa
-6. uji coba dengan data warga desa
+5. setelah programnya udah oke, program kita di integrasi ke sistem di desa
+6. Penyesuaian lebih lanjut dengan keperluan di desa
+7. uji coba dengan data warga desa
 
 
 ## Link & Other Resources
