@@ -20,6 +20,3 @@ Gambaran fisik Anjungan Desa Mandiri<br><br>
 Link Figma >> https://www.figma.com/design/0zTsgWDqvTnpMipozKDSaS/Anjungan-Desa-Mandiri?node-id=0-1&t=AHuNoN6aFzIoXxXn-0
 <br>
 Website Desa Rawapanjang >> https://rawapanjang-desa.id/
-<br>
-Website Desa Digital Kabupaten Bogor >> https://desadigital.bogorkab.go.id/index.php?pgs=SRV
-<br>
