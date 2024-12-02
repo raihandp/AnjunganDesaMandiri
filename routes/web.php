@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\Surat_Digital\skDomisiliController;
 use App\Http\Controllers\SuratController;
+use App\Http\Controllers\SKDController;
 
 
 // Route::get('/login', [LoginController::class, 'showNikForm'])->name('login.showNikForm');
@@ -31,6 +32,14 @@ Route::get('/skp', function () {
 });
 Route::get('/sk', function () {
     return view('surat-surat.surat_kuasa');
+});
+Route::get('/verif', function () {
+    return view('verif_surat');
+});
+// routes/web.php
+Route::get('/preview-surat', 'SKDController@preview')->name('preview.surat');
+Route::get('/berhasil', function () {
+    return view('berhasil');
 });
 
 Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm']);
