@@ -23,6 +23,10 @@ Route::get('/profil_desa', function () {
     return view('profil_desa');
 });
 
+Route::get('/skd', function () {
+    return view('surat-surat.surat_ket_domisili');
+});
+
 Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm']);
 // Route::post('/sk-domisili/submit', [skDomisiliController::class, 'submitForm']);
 
