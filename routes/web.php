@@ -12,17 +12,10 @@ use App\Http\Controllers\SKDController;
 // Route::get('/login/pin/{nik}', [LoginController::class, 'showPinForm'])->name('login.showPinForm');
 // Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('login.checkPin');
 
-Route::get('/', function () {
-    return view('halaman_utama');
-})->name('halaman_utama');
+Route::view('/', 'halaman_utama');
+Route::view('/layanan_digital', 'surat_digital');
+Route::view('/profil_desa', 'profil_desa');
 
-Route::get('/layanan_digital', function () {
-    return view('surat_digital');
-});
-
-Route::get('/profil_desa', function () {
-    return view('profil_desa');
-});
 
 Route::get('/skd', function () {
     return view('surat-surat.surat_ket_domisili');
@@ -52,14 +45,6 @@ Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm
 //     return view('surat_digital.skd');
 // });
 
-Route::get('/tentang_kami', function () {
-    return view('profil_desa.tentang_kami');
-});
-
-Route::get('/visi_misi', function () {
-    return view('profil_desa.visi_misi');
-});
-
-Route::get('/sejarah_desa', function () {
-    return view('profil_desa.sejarah_desa');
-});
+Route::view('/tentang_kami', 'profil_desa.tentang_kami');
+Route::view('/visi_misi', 'profil_desa.visi_misi');
+Route::view('/sejarah_desa', 'profil_desa.sejarah_desa');
