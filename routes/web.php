@@ -16,24 +16,15 @@ Route::view('/', 'halaman_utama');
 Route::view('/layanan_digital', 'surat_digital');
 Route::view('/profil_desa', 'profil_desa');
 
+Route::view('/skd', 'surat-surat.surat_ket_domisili');
+Route::view('/skp', 'surat-surat.surat_ket_pengantar');
+Route::view('/sk', 'surat-surat.surat_kuasa');
+Route::view('/verif', 'verif_surat');
+Route::view('/berhasil', 'berhasil');
 
-Route::get('/skd', function () {
-    return view('surat-surat.surat_ket_domisili');
-});
-Route::get('/skp', function () {
-    return view('surat-surat.surat_ket_pengantar');
-});
-Route::get('/sk', function () {
-    return view('surat-surat.surat_kuasa');
-});
-Route::get('/verif', function () {
-    return view('verif_surat');
-});
 // routes/web.php
 Route::get('/preview-surat', 'SKDController@preview')->name('preview.surat');
-Route::get('/berhasil', function () {
-    return view('berhasil');
-});
+
 
 Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm']);
 // Route::post('/sk-domisili/submit', [skDomisiliController::class, 'submitForm']);
