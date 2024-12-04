@@ -38,16 +38,19 @@
             display: inline-block;
             width: 200px;
             font-weight: bold;
+            margin-bottom: 10px
         }
         .form-group input {
-            width: calc(70%);
+            width: calc(90%);
             padding: 10px;
             border: 1px solid #333;
             border-radius: 5px;
             font-size: 14px;
+            margin-left: 20px;
         }
         .form-group input[type="number"] {
             width: 50px;
+            margin-left: -120px;
         }
         .button-container {
             text-align: center;
@@ -97,11 +100,11 @@
             <input type="text" name="alamat" value="Jl. Rajawali No. 1" readonly>
         </div>
         <div class="form-group">
-            <label>RT:</label>
+            <label>RT :</label>
             <input type="number" name="rt" value="016" readonly>
         </div>
         <div class="form-group">
-            <label>RW:</label>
+            <label>RW :</label>
             <input type="number" name="rw" value="005" readonly>
         </div>
         <hr>
@@ -111,8 +114,8 @@
         </div>
         
         <div class="button-container">
-            <button type="button" class="button" onclick="window.location.href='/';">Halaman Utama</button>
-            <button type="submit" class="button">Lanjutkan</button>
+            <button class="button" onclick="window.location.href='/';">Halaman Utama</button>
+            <button type="submit" class="button" onclick="window.location.href='/skd';">Lanjutkan</button>
         </div>
     </form>
 </div>

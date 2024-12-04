@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surat Keterangan Domisili</title>
-    <link rel="icon" href="https://rawapanjang-bojonggede.desa.id/assets/files/data/website-desa-rawapanjang-3201132008/images/logo_pemkab_bogor.png" type="image/png">
+    <title>Tentang Kami - Anjungan Desa Mandiri Desa Rawapanjang</title>
+    <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -93,7 +93,7 @@
     </p>
 
     <div class="button-container">
-        <button type="button" class="button" onclick="window.location.href='/profil_desa';">Kembali</button>
+        <button class="button" onclick="window.history.back();">Kembali</button>
     </div>
 </div>
 

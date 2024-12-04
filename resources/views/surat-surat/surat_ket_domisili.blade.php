@@ -60,17 +60,17 @@
                 <table class="content">
                     <tr>
                         <td>NIK / No KTP</td>
-                        <td>: </td>
+                        <td style="padding-left: 10px;">: </td>
                         <td>tes</td>
                     </tr>
                     <tr>
                         <td>Nama Lengkap</td>
-                        <td>: </td>
+                        <td style="padding-left: 10px;">: </td>
                         <td>tes</td>
                     </tr>
                     <tr>
                         <td>Tempat/Tanggal Lahir</td>
-                        <td>: </td>
+                        <td style="padding-left: 10px;">: </td>
                         <td>tes, tes</td>
                     </tr>
                 </table>

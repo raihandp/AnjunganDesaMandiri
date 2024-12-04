@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surat Digital - Anjungan Desa Mandiri</title>
-    <link rel="icon" href="https://rawapanjang-bojonggede.desa.id/assets/files/data/website-desa-rawapanjang-3201132008/images/logo_pemkab_bogor.png" type="image/png">
+    <title>Surat Digital - Anjungan Desa Mandiri Desa Rawapanjang</title>
+    <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style>
         body {
             margin: 0;
@@ -71,9 +71,9 @@
 
     <!-- Tombol Pilihan Surat -->
     <div class="button-container">
-        <!-- <button class="button" onclick="window.location.href='/surat_izin_keramaian';">Surat Izin Keramaian</button> -->
+        <!-- <button class="button" onclick="window.location.href='/surat_kuasa';">Surat Kuasa</button> -->
         <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Keterangan Domisili</button>
-        <!-- <button class="button" onclick="window.location.href='/surat_keterangan_tidak_mampu';">Surat Keterangan Tidak Mampu</button> -->
+        <!-- <button class="button" onclick="window.location.href='/surat_keterangan_pengantar';">Surat Keterangan Pengantar</button> -->
     </div>
     <!-- <div class="button-container">
         <button class="button" onclick="window.location.href='/surat_keterangan_kematian';">Surat Keterangan Kematian</button>
@@ -82,10 +82,7 @@
 
     <!-- Tombol Navigasi -->
     <div class="nav-buttons">
-        <button class="button" onclick="window.location.href='';">Sebelumnya</button>
         <button class="button" onclick="window.location.href='/';">Halaman Utama</button>
-        <button class="button" onclick="window.location.href='';">Berikutnya</button>
     </div>
-
 </body>
 </html>
