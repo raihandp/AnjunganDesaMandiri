@@ -15,7 +15,8 @@ Anjungan Desa Mandiri (ADM) adalah sebuah sistem dibangun untuk membantu pengelo
 
 
 ## Link & Other Resources
-Gambaran fisik Anjungan Desa Mandiri<br><br>
+Gambaran fisik Anjungan Desa Mandiri<br>
+(Tapi posisi kita cuma develop aplikasinya, gk buat hardwarenya)<br><br>
 <img src="https://opendesa.id/wp-content/uploads/2023/04/Sayembara-442x1024.jpg" height="300">     <img src="https://th.bing.com/th/id/OIP.5nzuo5yM2dvZVdu-UOwbugHaE8?w=271&h=181&c=7&r=0&o=5&dpr=1.5&pid=1.7" height="300">
 <br><br>
 Link Figma >> https://www.figma.com/design/0zTsgWDqvTnpMipozKDSaS/Anjungan-Desa-Mandiri?node-id=0-1&t=AHuNoN6aFzIoXxXn-0
