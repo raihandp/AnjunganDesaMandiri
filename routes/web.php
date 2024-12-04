@@ -12,10 +12,12 @@ use App\Http\Controllers\SKDController;
 // Route::get('/login/pin/{nik}', [LoginController::class, 'showPinForm'])->name('login.showPinForm');
 // Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('login.checkPin');
 
+// Fitur utama
 Route::view('/', 'halaman_utama');
 Route::view('/layanan_digital', 'surat_digital');
 Route::view('/profil_desa', 'profil_desa');
 
+//
 Route::view('/skd', 'surat-surat.surat_ket_domisili');
 Route::view('/skp', 'surat-surat.surat_ket_pengantar');
 Route::view('/sk', 'surat-surat.surat_kuasa');
@@ -36,6 +38,7 @@ Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm
 //     return view('surat_digital.skd');
 // });
 
+// Halaman Profil Desa
 Route::view('/tentang_kami', 'profil_desa.tentang_kami');
 Route::view('/visi_misi', 'profil_desa.visi_misi');
 Route::view('/sejarah_desa', 'profil_desa.sejarah_desa');
