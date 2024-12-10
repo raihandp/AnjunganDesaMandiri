@@ -115,7 +115,7 @@
         
         <div class="button-container">
             <button class="button" onclick="window.location.href='/';">Halaman Utama</button>
-            <button type="submit" class="button" onclick="window.location.href='/skd';">Lanjutkan</button>
+            <button type="submit" class="button" onclick="window.location.href='/verif';">Lanjutkan</button>
         </div>
     </form>
 </div>

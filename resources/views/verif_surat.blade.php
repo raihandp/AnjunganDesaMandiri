@@ -61,7 +61,7 @@
     </div>
     <div class="form">
       <label style="margin-bottom: 10px;">Nomor Ponsel :</label>
-      <input type="number" placeholder="Masukkan Nomor HP" required>
+      <input type="string" placeholder="Masukkan Nomor HP" required>
     </div>
     <div class="button-container">
       <button class="button" onclick="window.history.back();">Kembali</button>
