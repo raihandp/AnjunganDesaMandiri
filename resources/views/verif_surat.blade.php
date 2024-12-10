@@ -26,7 +26,7 @@
       margin-top: 20px;
       align-items: center;
     }
-    .form input[type="number"] {
+    .form input[type="string"] {
       padding: 10px;
       margin-bottom: 10px;
       border: 1px solid #ddd;
