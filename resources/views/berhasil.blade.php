@@ -11,7 +11,7 @@
         <h1>Surat telah berhasil dibuat</h1>
         <p>Kami akan segera menghubungi Anda begitu surat selesai diproses</p>
         <div class="buttons">
-            <a href="url-halaman-utama" class="btn">Halaman Utama</a>
+            <button class="button" onclick="window.location.href='/';">Halaman Utama</button>
             <a href="url-keluar" class="btn">Keluar</a>
         </div>
     </div>
