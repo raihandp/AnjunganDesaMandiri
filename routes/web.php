@@ -13,9 +13,11 @@ Route::get('/login/pin/{nik}', [LoginController::class, 'showPinForm'])->name('l
 Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('login.checkPin');
 
 // Fitur utama
-Route::view('/', 'halaman_utama');
+Route::view('/', 'halaman_utama')->name('halaman_utama');
 Route::view('/layanan_digital', 'surat_digital');
 Route::view('/profil_desa', 'profil_desa');
+
+Route::view('/login2', 'login.login');
 
 // Preview Surat
 Route::view('/skd', 'surat-surat.surat_ket_domisili');

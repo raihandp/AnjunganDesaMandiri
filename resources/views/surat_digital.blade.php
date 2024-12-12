@@ -71,9 +71,9 @@
 
     <!-- Tombol Pilihan Surat -->
     <div class="button-container">
-        <!-- <button class="button" onclick="window.location.href='/surat_kuasa';">Surat Kuasa</button> -->
+        <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Kuasa</button>
         <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Keterangan Domisili</button>
-        <!-- <button class="button" onclick="window.location.href='/surat_keterangan_pengantar';">Surat Keterangan Pengantar</button> -->
+        <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Keterangan Pengantar</button>
     </div>
     <!-- <div class="button-container">
         <button class="button" onclick="window.location.href='/surat_keterangan_kematian';">Surat Keterangan Kematian</button>
