@@ -6,6 +6,29 @@ use App\Http\Controllers\Surat_Digital\skDomisiliController;
 use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
+//Code Testing
+Route::view('/test', '_test');
+Route::view('/login2', 'login.login');
+
+Route::view('/', 'halaman_utama')->name('halaman_utama');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Menu Login
 Route::get('/login', [LoginController::class, 'showNikForm'])->name('login.showNikForm');
 Route::post('/login/check-nik', [LoginController::class, 'checkNik'])->name('login.checkNik');
@@ -16,8 +39,6 @@ Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('log
 Route::view('/', 'halaman_utama')->name('halaman_utama');
 Route::view('/layanan_digital', 'surat_digital');
 Route::view('/profil_desa', 'profil_desa');
-
-Route::view('/login2', 'login.login');
 
 // Preview Surat
 Route::view('/skd', 'surat-surat.surat_ket_domisili');

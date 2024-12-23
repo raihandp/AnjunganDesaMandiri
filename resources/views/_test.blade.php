@@ -24,36 +24,28 @@
             align-items: center;
             border: 2px solid #ffffff;
             color: white;
+        }
+        video {
             width: 100%;
         }
         .button-container {
             display: flex;
             overflow-x: auto;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
             padding-top: 0px;
             gap: 20px;
-            scrollbar-width: none; Sembunyikan scrollbar di Edge, Chrome
+            scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+            -ms-overflow-style: none; /* Sembunyikan scrollbar di Internet Explorer 10+ */
         }
         .button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: #ff9900;
             color: white;
             padding: 10px 20px;
-            border: 1px solid #ffffff;
+            border: 2px solid #ffffff;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            font-weight: bold; 
             flex-shrink: 0;
-            font-size: 16px;
-            line-height: 1.3;
-            letter-spacing: 0.5px;
-            height: 50px;
-            max-width: 120px;
         }
         .button:hover {
             background-color: #e68a00;
@@ -61,9 +53,11 @@
         .footer {
             /* position: fixed;
             bottom: 0; */
+            /* height: 30vh; */
             width: 100%;
             color: white;
             text-align: center;
+            /* padding-top: 10px; */
         }
         .credit {
             display: flex;
@@ -88,13 +82,16 @@
     <div class="footer">
         <p>Silahkan pilih menu yang Anda perlukan hari ini.</p>
         <div class="button-container"> 
-            <!-- <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button> -->
-            <a href='/layanan_digital' class="button">Layanan <br>Mandiri</a> 
+            <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button>
             <a href="#" class="button">Pengumuman</a> 
-            <a href="#" class="button">Tentang Desa <br>Rawapanjang</a> 
-            <a href="#" class="button">Agenda <br>Rawapanjang</a> 
-            <a href="#" class="button">Lapak</a> 
-            <a href="#" class="button">Artikel <br>Terkini</a>
+            <a href="#" class="button">Tentang Desa Rawapanjang</a> 
+            <a href="#" class="button">Agenda Rawapanjang</a> 
+            <a href="#" class="button">Lapa</a> 
+            <a href="#" class="button">Layanan Mandiri</a> 
+            <a href="#" class="button">Pengumuman</a> 
+            <a href="#" class="button">Tentang Desa Rawapanjang</a> 
+            <a href="#" class="button">Agenda Rawapanjang</a> 
+            <a href="#" class="button">Lapa</a> 
         </div> 
         <div class="credit">
             <p>&copy;</p>
@@ -108,4 +105,4 @@
         }); 
     </script> 
 </body> 
-</html>
+</html> 
