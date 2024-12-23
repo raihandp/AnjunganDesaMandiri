@@ -8,7 +8,7 @@ use App\Http\Controllers\SKDController;
 
 //Code Testing
 Route::view('/test', 'other._test');
-Route::view('/login2', 'login.login');
+Route::view('/login2', 'layanan-mandiri.login.login-copy');
 
 Route::view('/', 'halaman_utama')->name('halaman_utama');
 Route::view('/pengumuman', 'profil_desa.pengumuman');
@@ -17,7 +17,10 @@ Route::view('/agenda-rawapanjang', 'profil_desa.agenda');
 Route::view('/lapak-warga', 'profil_desa.lapak');
 Route::view('/artikel-terkini', 'profil_desa.artikel-terkini');
 
-Route::view('/layanan-mandiri', 'layanan-mandiri.login.pilih-surat');
+Route::view('/login-nik', 'layanan-mandiri.login.nik');
+Route::view('/login-pin', 'layanan-mandiri.login.pin');
+Route::view('/pilih-surat', 'layanan-mandiri.pilih-surat');
+
 
 
 
