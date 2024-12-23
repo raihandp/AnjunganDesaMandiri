@@ -8,11 +8,14 @@
     <style> 
         body { 
             margin: 0; 
-            background: linear-gradient(to top, #ff9472, #f2709c);
+            /* background: linear-gradient(to top, #ff9472, #f2709c); */
             font-family: sans-serif; 
             overflow-x: hidden; 
-            bottom: 0;
-        }
+            background-image: url('https://example.com/path/to/your/image.jpg'); /* Ganti dengan URL gambar Anda */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
         .header {
             color: white;
             text-align: center;
@@ -100,12 +103,12 @@
             <p>&copy;</p>
         </div>
     </div>
-    <script> // Optional: Add any additional JavaScript functionality here 
+    <!-- <script> // Optional: Add any additional JavaScript functionality here 
         document.querySelectorAll('.button').forEach(button => { 
             button.addEventListener('click', function() { 
                 alert('Tombol ' + this.textContent + ' diklik!'); 
             }); 
         }); 
-    </script> 
+    </script>  -->
 </body> 
 </html>
