@@ -3,42 +3,32 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Anjungan Desa Mandiri Desa Rawapanjang</title>
+    <title>Lapak Warga - Anjungan Desa Mandiri Desa Rawapanjang</title>
     <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style> 
         body { 
             margin: 0; 
             background: linear-gradient(to top, #ff9472, #f2709c);
             font-family: sans-serif; 
-            overflow-x: hidden; 
-            /* background-image: url('AnjunganDesaMandiri\assets\Background Mockup Anjungan.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat; */
             height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
         }
         .header {
             color: white;
             text-align: center;
+            border: 2px solid #ffffff;
         }
-        .video-container {
-            height: 60vh;
+        .page-content {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #ffffff;
             color: white;
             width: 100%;
         }
         .button-container {
             display: flex;
-            overflow-x: auto;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            padding-top: 0px;
-            gap: 20px;
-            scrollbar-width: none; Sembunyikan scrollbar di Edge, Chrome
         }
         .button {
             display: flex;
@@ -63,8 +53,8 @@
             background-color: #e68a00;
         }
         .footer {
-            /* position: fixed;
-            bottom: 0; */
+            position: fixed;
+            bottom: 0;
             width: 100%;
             color: white;
             text-align: center;
@@ -82,34 +72,18 @@
 </head> 
 <body> 
     <div class="header"> 
-        <h3>Selamat Datang di Anjungan Desa Mandiri</h3> 
-        <h3>Desa Rawapanjang Kabupaten Bogor</h3> 
+        <h3>Lapak Warga</h3> 
     </div> 
-    <div class="video-container"> 
-        <p>Video Profil Desa</p>
-        <!-- <video controls> <source src="video-profil-desa.mp4" type="video/mp4"> Replace with your video source Your browser does not support the video tag. </video>  -->
+    <div class="page-content"> 
+        <p>>.<  Segera Hadir  >.<</p>
     </div> 
     <div class="footer">
-        <p>Silahkan pilih menu yang Anda perlukan hari ini.</p>
         <div class="button-container"> 
-            <!-- <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button> -->
-            <a href='/layanan-mandiri' class="button">Layanan <br>Mandiri</a> 
-            <a href='/pengumuman' class="button">Pengumuman</a> 
-            <a href='/tentang-desa-rawapanjang' class="button">Tentang Desa <br>Rawapanjang</a> 
-            <a href='/agenda-rawapanjang' class="button">Agenda <br>Rawapanjang</a> 
-            <a href='/lapak-warga' class="button">Lapak</a> 
-            <a href='/artikel-terkini' class="button">Artikel <br>Terkini</a>
+            <button class="button" onclick="window.history.back();">Kembali</button>
         </div> 
         <div class="credit">
             <p>&copy;</p>
         </div>
     </div>
-    <!-- <script> // Optional: Add any additional JavaScript functionality here 
-        document.querySelectorAll('.button').forEach(button => { 
-            button.addEventListener('click', function() { 
-                alert('Tombol ' + this.textContent + ' diklik!'); 
-            }); 
-        }); 
-    </script>  -->
 </body> 
 </html>

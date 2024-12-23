@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Anjungan Desa Mandiri Desa Rawapanjang</title>
+    <title>Pengumuman - Anjungan Desa Mandiri Desa Rawapanjang</title>
     <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style> 
         body { 
@@ -11,11 +11,7 @@
             background: linear-gradient(to top, #ff9472, #f2709c);
             font-family: sans-serif; 
             overflow-x: hidden; 
-            /* background-image: url('AnjunganDesaMandiri\assets\Background Mockup Anjungan.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat; */
-            height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
+            bottom: 0;
         }
         .header {
             color: white;
@@ -90,15 +86,8 @@
         <!-- <video controls> <source src="video-profil-desa.mp4" type="video/mp4"> Replace with your video source Your browser does not support the video tag. </video>  -->
     </div> 
     <div class="footer">
-        <p>Silahkan pilih menu yang Anda perlukan hari ini.</p>
         <div class="button-container"> 
-            <!-- <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button> -->
-            <a href='/layanan-mandiri' class="button">Layanan <br>Mandiri</a> 
-            <a href='/pengumuman' class="button">Pengumuman</a> 
-            <a href='/tentang-desa-rawapanjang' class="button">Tentang Desa <br>Rawapanjang</a> 
-            <a href='/agenda-rawapanjang' class="button">Agenda <br>Rawapanjang</a> 
-            <a href='/lapak-warga' class="button">Lapak</a> 
-            <a href='/artikel-terkini' class="button">Artikel <br>Terkini</a>
+            <button class="button" onclick="window.history.back();">Kembali</button>
         </div> 
         <div class="credit">
             <p>&copy;</p>

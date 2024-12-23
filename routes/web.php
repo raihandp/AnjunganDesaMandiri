@@ -7,11 +7,17 @@ use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
 //Code Testing
-Route::view('/test', '_test');
+Route::view('/test', 'other._test');
 Route::view('/login2', 'login.login');
 
 Route::view('/', 'halaman_utama')->name('halaman_utama');
+Route::view('/pengumuman', 'profil_desa.pengumuman');
+Route::view('/tentang-desa-rawapanjang', 'profil_desa.tentang-desa');
+Route::view('/agenda-rawapanjang', 'profil_desa.agenda');
+Route::view('/lapak-warga', 'profil_desa.lapak');
+Route::view('/artikel-terkini', 'profil_desa.artikel-terkini');
 
+Route::view('/layanan-mandiri', 'layanan-mandiri.login.pilih-surat');
 
 
 
@@ -37,8 +43,8 @@ Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('log
 
 // Fitur utama
 Route::view('/', 'halaman_utama')->name('halaman_utama');
-Route::view('/layanan_digital', 'surat_digital');
-Route::view('/profil_desa', 'profil_desa');
+Route::view('/layanan_digital', 'other.surat_digital');
+Route::view('/profil_desa', 'other.profil_desa');
 
 // Preview Surat
 Route::view('/skd', 'surat-surat.surat_ket_domisili');
@@ -46,8 +52,8 @@ Route::view('/skp', 'surat-surat.surat_ket_pengantar');
 Route::view('/sk', 'surat-surat.surat_kuasa');
 
 // Halaman Verifikasi Surat
-Route::view('/verif', 'verif_surat');
-Route::view('/berhasil', 'berhasil');
+Route::view('/verif', 'other.verif_surat');
+Route::view('/berhasil', 'other.berhasil');
 
 // Route::get('/preview-surat', 'SKDController@preview')->name('preview.surat');
 
