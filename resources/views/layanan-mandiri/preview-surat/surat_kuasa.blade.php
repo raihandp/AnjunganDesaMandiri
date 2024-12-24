@@ -6,6 +6,7 @@
         <title>Surat Kuasa</title> 
         <style> 
             body { 
+                background: #ffffff;
                 font-family: 'Times New Roman'; 
             } 
             h1 {

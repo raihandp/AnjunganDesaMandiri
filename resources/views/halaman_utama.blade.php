@@ -46,7 +46,7 @@
             align-items: center;
             background-color: #ff9900;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 30px;
             border: 1px solid #ffffff;
             border-radius: 5px;
             cursor: pointer;
@@ -78,6 +78,14 @@
             background-color: #ff9900;
             color: white;
         }
+        /* .colors {
+            color: #888;
+            color: #555;
+            color: #4caf50;
+            background: #388e3c;
+            color: #333;
+            color: #fff;
+        } */
     </style>
 </head> 
 <body> 

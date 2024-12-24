@@ -98,12 +98,6 @@
             background-color: #ff9900;
             color: white;
         }
-        /* .colors {
-            color: #888;
-            color: #555;
-            color: #4caf50;
-            background: #388e3c;
-        } */
     </style>
 </head>
 <body>

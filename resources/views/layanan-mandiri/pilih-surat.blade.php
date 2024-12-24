@@ -3,86 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surat Digital - Anjungan Desa Mandiri Desa Rawapanjang</title>
+    <title>Layanan Mandiri - Anjungan Desa Mandiri Desa Rawapanjang</title>
     <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: sans-serif;
             background: linear-gradient(to top, #ff9472, #f2709c);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-            color: #333;
+            color: white;
         }
-
-        h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-            color: #fff;
+        .page-content {
+            padding: 30px 50px 0 50px;
         }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 50px;
-            color: #fff;
-        }
-
         .button-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
         }
-
         .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: orange;
             color: white;
-            border: none;
+            border: 1px solid #ffffff;
             padding: 20px 30px;
-            margin: 10px;
+            margin: 15px;
             font-size: 18px;
             border-radius: 10px;
             cursor: pointer;
-            width: 250px;
+            width: 220px;
+            line-height: 1.3;
+            letter-spacing: 0.5px;
+            transition: background 0.3s;
+            flex-shrink: 0;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
         }
-
         .button:hover {
             background-color: darkorange;
         }
 
         .nav-buttons {
             display: flex;
-            margin-top: 30px;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
         }
 
         .nav-buttons .button {
-            padding: 10px 20px;
+            padding: 0px;
             width: 180px;
             height: 50px;
+            font-size: 16px;
+        }
+
+        .footer {
+            /* position: fixed;
+            bottom: 0; */
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+        .credit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            font-size: 12px;
+            background-color: #ff9900;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Surat Digital</h1>
-    <p>Silahkan pilih surat yang ingin Anda ajukan.</p>
-
-    <!-- Tombol Pilihan Surat -->
-    <div class="button-container">
-        <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Kuasa</button>
-        <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Keterangan Domisili</button>
-        <button class="button" onclick="window.location.href='/surat_keterangan_domisili';">Surat Keterangan Pengantar</button>
-    </div>
-    <!-- <div class="button-container">
-        <button class="button" onclick="window.location.href='/surat_keterangan_kematian';">Surat Keterangan Kematian</button>
-        <button class="button" onclick="window.location.href='/surat_perubahan_kk';">Surat Permohonan Perubahan KK</button>
-    </div> -->
-
-    <!-- Tombol Navigasi -->
-    <div class="nav-buttons">
-        <button class="button" onclick="window.location.href='/';">Halaman Utama</button>
+    <div class="page-content"> 
+        <h2>Selamat Datang, Warga</h2>
+        <h3>Silahkan pilih surat yang ingin Anda ajukan.</h3>
+        <!-- Tombol Pilihan Surat -->
+        <div class="button-container">
+            <a href="#" class="button">Surat Kuasa</a>
+            <a href='/surat-keterangan-domisili' class="button">Surat Keterangan Domisili</a>
+            <a href="#" class="button">Surat Keterangan Pengantar</a>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button">Surat Izin Keramaian</a>
+            <a href="#" class="button">Surat Keterangan Tidak Mampu</a>
+            <a href="#" class="button">Surat Keterangan Kematian</a>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button">Surat Permohonan Perubahan</a>
+            <a href="#" class="button">Surat Keterangan Domisili Usaha</a>
+            <a href="#" class="button">Surat Keterangan Usaha</a>
+        </div>
+        <div class="button-container">
+            <a href="#" class="button">Surat Keterangan Wali Hakim</a>
+        </div>
+    </div> 
+    <div class="footer">
+        <!-- Tombol Navigasi -->
+        <div class="nav-buttons"> 
+            <a href='/' class="button">Halaman Utama</a> 
+        </div> 
+        <div class="credit">
+            <p>&copy;</p>
+        </div>
     </div>
 </body>
 </html>

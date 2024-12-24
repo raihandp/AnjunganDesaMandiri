@@ -10,7 +10,7 @@ class skDomisiliController extends Controller
 {
     public function showForm()
     {
-        return view('surat_digital.skd');
+        return view('other.skd');
     }
 
     public function submitForm(Request $request)
