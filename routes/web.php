@@ -6,33 +6,37 @@ use App\Http\Controllers\Surat_Digital\skDomisiliController;
 use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
-//Code Testing
+// Code Testing
 Route::view('/test', 'other._test');
 Route::view('/login2', 'layanan-mandiri.login.login-copy');
 
-//Route Mockup Baru
-Route::view('/', 'halaman_utama')->name('halaman_utama');
-Route::view('/pengumuman', 'profil_desa.pengumuman');
-Route::view('/tentang-desa-rawapanjang', 'profil_desa.tentang-desa');
-Route::view('/agenda-rawapanjang', 'profil_desa.agenda');
-Route::view('/lapak-warga', 'profil_desa.lapak');
-Route::view('/artikel-terkini', 'profil_desa.artikel-terkini');
+// Route Mockup Baru
+Route::view('/', 'onboarding');
+Route::view('/warga', 'warga.halaman_utama')->name('halaman_utama');
 
-Route::view('/login-nik', 'layanan-mandiri.login.nik');
-Route::view('/login-pin', 'layanan-mandiri.login.pin');
-Route::view('/pilih-surat', 'layanan-mandiri.pilih-surat');
+// Menu Profil Desa
+Route::view('/pengumuman', 'warga.profil_desa.pengumuman');
+Route::view('/tentang-desa-rawapanjang', 'warga.profil_desa.tentang-desa');
+Route::view('/agenda-rawapanjang', 'warga.profil_desa.agenda');
+Route::view('/lapak-warga', 'warga.profil_desa.lapak');
+Route::view('/artikel-terkini', 'warga.profil_desa.artikel-terkini');
 
-//Input Form Surat
-Route::view('/surat-keterangan-domisili', 'layanan-mandiri.form-surat.surat-keterangan-domisili');
+// Masuk Menu Layanan Mandiri
+Route::view('/login-nik', 'warga.layanan-mandiri.login.nik');
+Route::view('/login-pin', 'warga.layanan-mandiri.login.pin');
+Route::view('/pilih-surat', 'warga.layanan-mandiri.pilih-surat');
 
-//Preview Surat
-Route::view('/skd', 'layanan-mandiri.preview-surat.surat_ket_domisili');
-Route::view('/skp', 'layanan-mandiri.preview-surat.surat_ket_pengantar');
-Route::view('/sk', 'layanan-mandiri.preview-surat.surat_kuasa');
+// Layanan Mandiri - Input Form Surat
+Route::view('/surat-keterangan-domisili', 'warga.layanan-mandiri.form-surat.surat-keterangan-domisili');
 
-// Verifikasi Surat
-Route::view('/verif', 'layanan-mandiri.verif_surat');
-Route::view('/berhasil', 'layanan-mandiri.berhasil');
+// Layanan Mandiri - Preview Surat
+Route::view('/skd', 'warga.layanan-mandiri.preview-surat.surat_ket_domisili');
+Route::view('/skp', 'warga.layanan-mandiri.preview-surat.surat_ket_pengantar');
+Route::view('/sk', 'warga.layanan-mandiri.preview-surat.surat_kuasa');
+
+// Layanan Mandiri - Verifikasi Surat
+Route::view('/verif', 'warga.layanan-mandiri.verif_surat');
+Route::view('/berhasil', 'warga.layanan-mandiri.berhasil');
 
 
 

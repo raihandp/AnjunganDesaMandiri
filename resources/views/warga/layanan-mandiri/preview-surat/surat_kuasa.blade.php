@@ -3,7 +3,7 @@
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Surat Keterangan Pengantar</title> 
+        <title>Surat Kuasa</title> 
         <style> 
             body { 
                 background: #ffffff;
@@ -52,62 +52,96 @@
         
         <div class="content">
             <div class="header">
-                <h2>Surat Keterangan Pengantar</h2>
-                <p style="margin-top:-10px;">Nomor: tes</p>
-                <br>
+                <h2>Surat Kuasa</h2>
+                <p style="margin-top:-20px;">Nomor: [nomor_surat]</p>
             </div>
             <div>
-                <p>Yang bertanda tangan di bawah ini Kepala Desa Rawapanjang Kecamatan Bojonggede Kabupaten Bogor, Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa: </p>
+                <p>Yang bertanda tangan di bawah ini:</p>
                 <table class="content">
                     <tr>
+                        <td>NIK / No KTP</td>
+                        <td>: </td>
+                        <td>[nik]</td>
+                    </tr>
+                    <tr>
                         <td>Nama Lengkap</td>
-                        <td>:</td>
+                        <td>: </td>
                         <td>[nama]</td>
                     </tr>
                     <tr>
                         <td>Tempat/Tanggal Lahir</td>
-                        <td>:</td>
-                        <td>[tempatlahir], [tanggallahir]</td>
-                    </tr>
-                    <tr>
-                        <td>Umur</td>
-                        <td>:</td>
-                        <td>[usia]</td>
-                    </tr>
-                    <tr>
-                        <td>Warga Negara</td>
-                        <td>:</td>
-                        <td>[warga_negara]</td>
-                    </tr>
-                    <tr>
-                        <td>Agama</td>
-                        <td>:</td>
-                        <td>[agama]</td>
-                    </tr>
-                    <tr>
-                        <td>Jenis Kelamin</td>
-                        <td>:</td>
-                        <td>[sex]</td>
+                        <td>: </td>
+                        <td>[tempat_lahir], [tanggal_lahir]</td>
                     </tr>
                     <tr>
                         <td>Tempat Tinggal</td>
                         <td>:</td>
                         <td>[alamat], Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
                     </tr>
+                </table>
+                <p>Dengan ini memberi kuasa penuh kepada:</p>
+                <table class="content">
                     <tr>
-                        <td>Berlaku</td>
+                        <td>NIK / No KTP</td>
+                        <td>: </td>
+                        <td>[nik]</td>
+                    </tr>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>: </td>
+                        <td>[nama]</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat/Tanggal Lahir</td>
+                        <td>: </td>
+                        <td>[tempat_lahir], [tanggal_lahir]</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Tinggal</td>
                         <td>:</td>
-                        <td>[mulai_berlaku] s/d [tgl_akhir]</td>
+                        <td>[alamat], Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
                     </tr>
                 </table>
-                <p>Demikian surat keterangan ini dibuat dengan sebenarnya, untuk dipergunakan sebagaimana mestinya. </p>
+                <br>
+                <table>
+                    <tr>
+                        <td>Untuk Keperluan</td>
+                        <td>:</td>
+                        <td>[keperluan]</td>
+                    </tr>
+                </table>
+                <p>Demikianlah surat kuasa ini saya buat, agar dapat digunakan sebagaimana mestinya.</p>
             </div>
             
-            <div class="footer">
-                <br><br>
-                <p>Rawapanjang, [tanggal]</p>
-                <br><br><br>
-                <p>____________________</p>
+            <div>
+                <br>
+                <table width="100%" style="text-align: center;">
+                    <tr>
+                        <td></td>
+                        <td>Rawapanjang, [tgl_surat]</td>
+                    </tr>
+                    <tr>
+                        <td>Yang Menerima Kuasa</td>
+                        <td>Yang Memberi Kuasa</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="height: 80px; text-align:left; position: relative; left: 7%;">(Materai <br>Rp10.000)</td>
+                    </tr>
+                    <tr>
+                        <td>[nama_penerima_kuasa]</td>
+                        <td>[nama_pemberi_kuasa]</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><br>Mengetahui,</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">[jabatan] [nama_desa]</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="height: 80px; vertical-align: bottom;">[nama_pejabat]</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>

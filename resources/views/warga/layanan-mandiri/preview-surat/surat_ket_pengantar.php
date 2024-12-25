@@ -3,7 +3,7 @@
     <head> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Surat Keterangan Domisili</title> 
+        <title>Surat Keterangan Pengantar</title> 
         <style> 
             body { 
                 background: #ffffff;
@@ -52,32 +52,55 @@
         
         <div class="content">
             <div class="header">
-                <h2>Surat Keterangan Domisili</h2>
-                <p style="margin-top:-10px;">Nomor: tes</p>
+                <h2>Surat Keterangan Pengantar</h2>
+                <p style="margin-top:-10px;">Nomor: [nomor_surat]</p>
                 <br>
             </div>
             <div>
-                <p>Yang bertanda tangan di bawah ini:</p>
+                <p>Yang bertanda tangan di bawah ini Kepala Desa Rawapanjang Kecamatan Bojonggede Kabupaten Bogor, Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa: </p>
                 <table class="content">
                     <tr>
-                        <td>NIK / No KTP</td>
-                        <td style="padding-left: 10px;">: </td>
-                        <td>tes</td>
-                    </tr>
-                    <tr>
                         <td>Nama Lengkap</td>
-                        <td style="padding-left: 10px;">: </td>
-                        <td>tes</td>
+                        <td>:</td>
+                        <td>[nama]</td>
                     </tr>
                     <tr>
                         <td>Tempat/Tanggal Lahir</td>
-                        <td style="padding-left: 10px;">: </td>
-                        <td>tes, tes</td>
+                        <td>:</td>
+                        <td>[tempat_lahir], [tanggal_lahir]</td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td>:</td>
+                        <td>[usia]</td>
+                    </tr>
+                    <tr>
+                        <td>Warga Negara</td>
+                        <td>:</td>
+                        <td>[warga_negara]</td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>:</td>
+                        <td>[agama]</td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>[jenis_kelamin]</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Tinggal</td>
+                        <td>:</td>
+                        <td>[alamat], Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
+                    </tr>
+                    <tr>
+                        <td>Berlaku</td>
+                        <td>:</td>
+                        <td>[mulai_berlaku] s/d [tgl_akhir]</td>
                     </tr>
                 </table>
-                <p>Orang tersebut di atas adalah benar-benar warga kami yang bertempat tinggal di [alamat_jalan] RT [rt] RW [rw] Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor.</p>
-                <p>Surat Keterangan ini dibuat untuk keperluan: tes</p>
-                <p>Demikian surat keterangan ini dibuat dengan sebenarnya.</p>
+                <p>Demikian surat keterangan ini dibuat dengan sebenarnya, untuk dipergunakan sebagaimana mestinya. </p>
             </div>
             
             <div class="footer">
