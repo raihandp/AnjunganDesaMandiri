@@ -117,7 +117,7 @@
         
         <div class="button-container">
             <button class="button" onclick="window.history.back();">Kembali</button>
-            <button type="submit" class="button" onclick="window.location.href='/verif';">Lanjutkan</button>
+            <button type="submit" class="button" onclick="window.location.href='/verifikasi';">Lanjutkan</button>
         </div>
     </form>
 </div>

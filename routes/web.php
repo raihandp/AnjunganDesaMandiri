@@ -7,12 +7,17 @@ use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
 // Code Testing
-Route::view('/test', 'other._test');
+Route::view('/test', 'admin.proses-surat');
 Route::view('/login2', 'layanan-mandiri.login.login-copy');
 
 // Route Mockup Baru
 Route::view('/', 'onboarding');
-Route::view('/warga', 'warga.halaman_utama')->name('halaman_utama');
+Route::view('/warga', 'warga.halaman_utama')->name('halaman_utama'); //Lanjut ke views warga
+Route::view('/admin', 'admin.login'); //Lanjut ke views admin
+
+// ====================================================================== //
+
+// ----- Views Warga ----- //
 
 // Menu Profil Desa
 Route::view('/pengumuman', 'warga.profil_desa.pengumuman');
@@ -35,11 +40,19 @@ Route::view('/skp', 'warga.layanan-mandiri.preview-surat.surat_ket_pengantar');
 Route::view('/sk', 'warga.layanan-mandiri.preview-surat.surat_kuasa');
 
 // Layanan Mandiri - Verifikasi Surat
-Route::view('/verif', 'warga.layanan-mandiri.verif_surat');
+Route::view('/verifikasi', 'warga.layanan-mandiri.verif_surat');
 Route::view('/berhasil', 'warga.layanan-mandiri.berhasil');
 
+// ----- Ends of Views Warga ----- //
+
+// ====================================================================== //
+
+// ----- Views Warga ----- //
+
+Route::view('/beranda', 'admin.beranda');
 
 
+// ----- Ends of Views Warga ----- //
 
 
 

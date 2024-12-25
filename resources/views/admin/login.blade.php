@@ -7,7 +7,6 @@
     <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style>
         body { 
-            height: 100vh;
             margin: 0;
             font-family: sans-serif;
             background: linear-gradient(to top, #ff9472, #f2709c);
@@ -15,7 +14,7 @@
         .header {
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
         }
         .page-content {
             display: flex;
@@ -77,17 +76,18 @@
             border-radius: 5px;
             font-size: 14px;
             color: #333;
+            text-align: center;
+            margin: 10px
         }
         .form-group input:focus {
             border-color: #4caf50;
             outline: none;
         }
         .footer {
-            position: fixed;
-            bottom: 0;
             width: 100%;
             color: white;
             text-align: center;
+            margin-top: 30px;
         }
         .credit {
             display: flex;
@@ -102,30 +102,26 @@
 </head>
 <body>
     <div class="header"> 
-        <h1>Layanan Mandiri</h1>
-        <h2>Anjungan Desa Mandiri Desa Rawapanjang</h2>
+        <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" alt="Logo Desa" />
+        <h1>Anjungan Desa Mandiri</h1>
+        <h2>Desa Rawapanjang<br>Kabupaten Bogor</h2>
     </div> 
     <div class="page-content"> 
         <div class="login-container">
-            <p>Silakan login terlebih dahulu untuk melanjutkan.</p>
-
+            <h2>Login Administrator Desa</h2>
             <form action="{{ url('/login') }}" method="POST">
                 {{ csrf_field() }}
-
                 <div class="form-group">
-                    <label for="nik">NIK:</label>
-                    <input type="text" id="nik" name="nik" placeholder="Masukkan NIK Anda" required>
+                    <input type="text" id="username" name="username" placeholder="Nama Pengguna" required>
+                    <input type="text" id="password" name="password" placeholder="Kata Sandi" required>
                 </div>
-                <div class="button-container"> 
-                    <button type="submit" class="button" onclick="window.location.href='/login-pin';">Lanjutkan</button>
+                <div class="button-container" style="padding: 0;"> 
+                    <button type="submit" class="button" onclick="window.location.href='/beranda';">Masuk</button>
                 </div> 
             </form>
         </div>
     </div> 
     <div class="footer">
-        <div class="button-container"> 
-            <button class="button" onclick="window.history.back();">Kembali</button>
-        </div> 
         <div class="credit">
             <p>&copy;</p>
         </div>

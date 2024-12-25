@@ -55,7 +55,7 @@
         <h1>Surat telah berhasil dibuat</h1>
         <p>Kami akan segera menghubungi Anda begitu surat selesai diproses</p>
         <div class="button-container">
-            <a href='/' class="button">Halaman Utama</a> 
+            <a href='/warga' class="button">Halaman Utama</a> 
         </div>
     </div>
 </body>

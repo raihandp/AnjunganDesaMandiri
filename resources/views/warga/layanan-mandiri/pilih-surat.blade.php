@@ -103,7 +103,7 @@
     <div class="footer">
         <!-- Tombol Navigasi -->
         <div class="nav-buttons"> 
-            <a href='/' class="button">Halaman Utama</a> 
+            <a href='/warga' class="button">Halaman Utama</a> 
         </div> 
         <div class="credit">
             <p>&copy;</p>
