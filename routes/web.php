@@ -7,60 +7,60 @@ use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
 // Code Testing
-Route::view('/test', 'admin.proses-surat');
-Route::view('/login2', 'layanan-mandiri.login.login-copy');
+Route::view('/test', 'admin.tests.test');
 
 // Route Mockup Baru
-Route::view('/', 'onboarding');
-Route::view('/warga', 'warga.halaman_utama')->name('halaman_utama'); //Lanjut ke views warga
-Route::view('/admin', 'admin.login'); //Lanjut ke views admin
+    Route::view('/', 'onboarding');
+    Route::view('/warga', 'warga.halaman_utama')->name('halaman_utama'); //Lanjut ke views warga
+    Route::view('/admin', 'admin.login'); //Lanjut ke views admin
+
+    // ====================================================================== //
+
+    // ----- Views Warga ----- //
+
+        // Menu Profil Desa
+        Route::view('/pengumuman', 'warga.profil_desa.pengumuman');
+        Route::view('/tentang-desa-rawapanjang', 'warga.profil_desa.tentang-desa');
+        Route::view('/agenda-rawapanjang', 'warga.profil_desa.agenda');
+        Route::view('/lapak-warga', 'warga.profil_desa.lapak');
+        Route::view('/artikel-terkini', 'warga.profil_desa.artikel-terkini');
+
+        // Masuk Menu Layanan Mandiri
+        Route::view('/login-nik', 'warga.layanan-mandiri.login.nik');
+        Route::view('/login-pin', 'warga.layanan-mandiri.login.pin');
+        Route::view('/pilih-surat', 'warga.layanan-mandiri.pilih-surat');
+
+        // Layanan Mandiri - Input Form Surat
+        Route::view('/surat-keterangan-domisili', 'warga.layanan-mandiri.form-surat.surat-keterangan-domisili');
+
+        // Layanan Mandiri - Preview Surat
+        Route::view('/skd', 'warga.layanan-mandiri.preview-surat.surat_ket_domisili');
+        Route::view('/skp', 'warga.layanan-mandiri.preview-surat.surat_ket_pengantar');
+        Route::view('/sk', 'warga.layanan-mandiri.preview-surat.surat_kuasa');
+
+        // Layanan Mandiri - Verifikasi Surat
+        Route::view('/verifikasi', 'warga.layanan-mandiri.verif_surat');
+        Route::view('/berhasil', 'warga.layanan-mandiri.berhasil');
+
+    // ----- Ends of Views Warga ----- //
+
+    // ====================================================================== //
+
+    // ----- Views Admin Desa ----- //
+
+        Route::view('/beranda', 'admin.beranda');
+        Route::view('/info-desa', 'admin.info-desa');
+        Route::view('/data-warga', 'admin.data-warga');
+        Route::view('/statistik', 'admin.statistik');
+        Route::view('/layanan-surat', 'admin.layanan-surat.dalam-proses');
+        Route::view('/pengumuman', 'admin.pengumuman');
+        Route::view('/artikel-desa', 'admin.artikel-desa');
+        Route::view('/agenda', 'admin.agenda');
+        Route::view('/pengaturan-akun', 'admin.pengaturan-akun');
+
+    // ----- Ends of Views Admin Desa ----- //
 
 // ====================================================================== //
-
-// ----- Views Warga ----- //
-
-// Menu Profil Desa
-Route::view('/pengumuman', 'warga.profil_desa.pengumuman');
-Route::view('/tentang-desa-rawapanjang', 'warga.profil_desa.tentang-desa');
-Route::view('/agenda-rawapanjang', 'warga.profil_desa.agenda');
-Route::view('/lapak-warga', 'warga.profil_desa.lapak');
-Route::view('/artikel-terkini', 'warga.profil_desa.artikel-terkini');
-
-// Masuk Menu Layanan Mandiri
-Route::view('/login-nik', 'warga.layanan-mandiri.login.nik');
-Route::view('/login-pin', 'warga.layanan-mandiri.login.pin');
-Route::view('/pilih-surat', 'warga.layanan-mandiri.pilih-surat');
-
-// Layanan Mandiri - Input Form Surat
-Route::view('/surat-keterangan-domisili', 'warga.layanan-mandiri.form-surat.surat-keterangan-domisili');
-
-// Layanan Mandiri - Preview Surat
-Route::view('/skd', 'warga.layanan-mandiri.preview-surat.surat_ket_domisili');
-Route::view('/skp', 'warga.layanan-mandiri.preview-surat.surat_ket_pengantar');
-Route::view('/sk', 'warga.layanan-mandiri.preview-surat.surat_kuasa');
-
-// Layanan Mandiri - Verifikasi Surat
-Route::view('/verifikasi', 'warga.layanan-mandiri.verif_surat');
-Route::view('/berhasil', 'warga.layanan-mandiri.berhasil');
-
-// ----- Ends of Views Warga ----- //
-
-// ====================================================================== //
-
-// ----- Views Warga ----- //
-
-Route::view('/beranda', 'admin.beranda');
-Route::view('/info-desa', 'admin.info-desa');
-Route::view('/data-warga', 'admin.data-warga');
-Route::view('/statistik', 'admin.statistik');
-Route::view('/layanan-surat', 'admin.layanan-surat');
-Route::view('/pengumuman', 'admin.pengumuman');
-Route::view('/artikel-desa', 'admin.artikel-desa');
-Route::view('/agenda', 'admin.agenda');
-Route::view('/pengaturan-akun', 'admin.pengaturan-akun');
-
-// ----- Ends of Views Warga ----- //
-
 
 
 
