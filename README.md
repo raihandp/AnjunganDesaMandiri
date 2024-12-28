@@ -1,7 +1,7 @@
 <p align="center"><img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" width="100" alt="Logo Kabupaten Bogor"></p>
 
 ## Anjungan Desa Mandiri
-Anjungan Desa Mandiri (ADM) adalah sebuah sistem dibangun untuk membantu pengelolaan dan pelayanan administrasi di tingkat desa atau daerah pedesaan. Tujuan utama dari ADM ini antara lain untuk mempermudah warga maupun perangkat desa dalam melakukan pelayanan, khususnya pada layanan persuratan.
+Anjungan Desa Mandiri (ADM) adalah sebuah sistem dibangun untuk membantu pengelolaan dan pelayanan administrasi di tingkat desa atau daerah pedesaan. Tujuan utama dari ADM ini antara lain untuk mempermudah warga maupun perangkat desa dalam melakukan pelayanan, khususnya pada layanan persuratan
 <br><br><br>
 
 ## Job Description
