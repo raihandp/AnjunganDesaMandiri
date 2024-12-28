@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Beranda - Laman Admin Desa Rawapanjang</title>
+        <title>Informasi Desa - Laman Admin Desa Rawapanjang</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -40,7 +40,7 @@
                 text-decoration: none;
                 padding: 10px;
                 border-radius: 5px;
-                transition: 0.3ss;
+                transition: 0.5s;
             }
 
             .nav-link:hover {
@@ -58,33 +58,18 @@
             /* Main Content Styles */
             .main-content {
                 flex-grow: 1;
-                padding: 20px;
             }
 
             .header {
                 background-color: #FFA500;
                 background: linear-gradient(to left, #FF8A00 50%, #F7E700);
-                margin: -20px -20px 0;
-                padding: 15px;
+                padding-left: 20px;
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
             }
 
-            .table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-            }
-
-            .table th, .table td {
-                border: 1px solid #ddd;
-                padding: 8px;
-                text-align: left;
-            }
-
-            .table th {
-                background-color: #f2f2f2;
+            .content {
+                padding: 0px 30px 30px 30px;
             }
 
             button {
@@ -110,27 +95,27 @@
                 <p>Desa Rawapanjang <br> Kabupaten Bogor</p>
             </div>
             <div class="sidebar-nav">
-                <a href="#" class="nav-link active">Beranda</a>
-                <a href="#" class="nav-link">Informasi Desa</a>
-                <a href="#" class="nav-link">Data Warga</a>
-                <a href="#" class="nav-link">Statistik Desa</a>
-                <a href="#" class="nav-link">Layanan Surat</a>
-                <a href="#" class="nav-link">Pengumuman</a>
-                <a href="#" class="nav-link">Artikel Desa</a>
-                <a href="#" class="nav-link">Agenda Desa</a>
-                <a href="#" class="nav-link">Pengaturan Akun</a>
+                <a href=/beranda class="nav-link">Beranda</a>
+                <a href=/info-desa class="nav-link active">Informasi Desa</a>
+                <a href=/data-warga class="nav-link">Data Warga</a>
+                <a href=/statistik class="nav-link">Statistik Desa</a>
+                <a href=/layanan-surat class="nav-link">Layanan Surat</a>
+                <a href=/pengumuman class="nav-link">Pengumuman</a>
+                <a href=/artikel-desa class="nav-link">Artikel Desa</a>
+                <a href=/agenda class="nav-link">Agenda Desa</a>
+                <a href=/pengaturan-akun class="nav-link">Pengaturan Akun</a>
+                <a href=/admin class="nav-link">Logout</a>
             </div>
         </div>
 
         <!-- Main Content -->
         <div class="main-content">
             <div class="header">
-                <h2>Desa Rawapanjang, Kabupaten Bogor</h2>
-                <button>Logout</button>
+                <h3>Desa Rawapanjang, Kabupaten Bogor</h3>
             </div>
 
-            <div>
-                <h4>Beranda</h4>
+            <div class="content">
+                <h4>Informasi Desa</h4>
                 
             </div>
         </div>

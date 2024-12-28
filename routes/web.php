@@ -7,7 +7,7 @@ use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
 // Code Testing
-Route::view('/test', 'admin.copy-proses-surat');
+Route::view('/test', 'admin.proses-surat');
 Route::view('/login2', 'layanan-mandiri.login.login-copy');
 
 // Route Mockup Baru
@@ -50,17 +50,16 @@ Route::view('/berhasil', 'warga.layanan-mandiri.berhasil');
 // ----- Views Warga ----- //
 
 Route::view('/beranda', 'admin.beranda');
-
+Route::view('/info-desa', 'admin.info-desa');
+Route::view('/data-warga', 'admin.data-warga');
+Route::view('/statistik', 'admin.statistik');
+Route::view('/layanan-surat', 'admin.layanan-surat');
+Route::view('/pengumuman', 'admin.pengumuman');
+Route::view('/artikel-desa', 'admin.artikel-desa');
+Route::view('/agenda', 'admin.agenda');
+Route::view('/pengaturan-akun', 'admin.pengaturan-akun');
 
 // ----- Ends of Views Warga ----- //
-
-
-
-
-
-
-
-
 
 
 
