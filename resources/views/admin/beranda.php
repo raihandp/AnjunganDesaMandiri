@@ -1,119 +1,138 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Anjungan Desa Mandiri Desa Rawapanjang</title>
-    <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
-    <style> 
-        body { 
-            margin: 0; 
-            background: linear-gradient(to top, #ff9472, #f2709c);
-            font-family: sans-serif; 
-            overflow-x: hidden; 
-            /* background-image: url('AnjunganDesaMandiri\assets\Background Mockup Anjungan.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat; */
-            height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
-        }
-        .header {
-            color: white;
-            text-align: center;
-        }
-        .video-container {
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid #ffffff;
-            color: white;
-            width: 100%;
-        }
-        .button-container {
-            display: flex;
-            overflow-x: auto;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            padding-top: 0px;
-            gap: 20px;
-            scrollbar-width: none; Sembunyikan scrollbar di Edge, Chrome
-        }
-        .button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ff9900;
-            color: white;
-            padding: 10px 30px;
-            border: 1px solid #ffffff;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            font-weight: bold; 
-            flex-shrink: 0;
-            font-size: 16px;
-            line-height: 1.3;
-            letter-spacing: 0.5px;
-            height: 50px;
-            max-width: 120px;
-        }
-        .button:hover {
-            background-color: #e68a00;
-        }
-        .footer {
-            /* position: fixed;
-            bottom: 0; */
-            width: 100%;
-            color: white;
-            text-align: center;
-        }
-        .credit {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 30px;
-            font-size: 12px;
-            background-color: #ff9900;
-            color: white;
-        }
-        /* .colors {
-            color: #888;
-            color: #555;
-            color: #4caf50;
-            background: #388e3c;
-            color: #333;
-            color: #fff;
-        } */
-    </style>
-</head> 
-<body> 
-    <div class="header"> 
-        <h3>Selamat Datang di Anjungan Desa Mandiri</h3> 
-        <h3>Desa Rawapanjang Kabupaten Bogor</h3> 
-    </div> 
-    <div class="video-container"> 
-        <p>Video Profil Desa</p>
-        <!-- <video controls> <source src="video-profil-desa.mp4" type="video/mp4"> Replace with your video source Your browser does not support the video tag. </video>  -->
-    </div> 
-    <div class="footer">
-        <p>Silahkan pilih menu yang Anda perlukan hari ini.</p>
-        <div class="button-container"> 
-            <!-- <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button> -->
-            <a href='/warga' class="button">Warga</a> 
-            <a href='/admin' class="button">Admin</a> 
-        </div> 
-        <div class="credit">
-            <p>&copy;</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beranda - Laman Admin Desa Rawapanjang</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                display: flex;
+                background-color: #f4f4f4;
+            }
+
+            /* Sidebar Styles */
+            .sidebar {
+                width: 250px;
+                background-color: #fff;
+                height: 100vh;
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .sidebar-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to right, #FF8A00 50%, #F7E700);
+                padding: 30px 20px 10px;
+            }
+
+            .sidebar-nav {
+                padding: 10px;
+            }
+
+            .nav-link {
+                display: block;
+                color: #333;
+                font-size: 14px;
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 5px;
+                transition: 0.3ss;
+            }
+
+            .nav-link:hover {
+                border: 1px solid #FFA500; /* Mengatur border solid dengan warna oranye */
+                background: white;
+                color: #FFA500; /* Warna teks */    
+            }
+
+            .nav-link.active {
+                background: linear-gradient(to right, #FF8A00 50%, #F7E700);
+                color: white; /* Warna teks */
+                font-weight: bold;
+            }
+
+            /* Main Content Styles */
+            .main-content {
+                flex-grow: 1;
+                padding: 20px;
+            }
+
+            .header {
+                background-color: #FFA500;
+                background: linear-gradient(to left, #FF8A00 50%, #F7E700);
+                margin: -20px -20px 0;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            .table th, .table td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            .table th {
+                background-color: #f2f2f2;
+            }
+
+            button {
+                border: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: #FFA500;
+                color: white;
+            }
+
+            button:hover {
+                background-color: #e68a00;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="profile-photo.png" alt="Foto Akun" class="rounded-circle mb-2" width="100">
+                <h4>Admin Desa</h4>
+                <p>Desa Rawapanjang <br> Kabupaten Bogor</p>
+            </div>
+            <div class="sidebar-nav">
+                <a href="#" class="nav-link active">Beranda</a>
+                <a href="#" class="nav-link">Informasi Desa</a>
+                <a href="#" class="nav-link">Data Warga</a>
+                <a href="#" class="nav-link">Statistik Desa</a>
+                <a href="#" class="nav-link">Layanan Surat</a>
+                <a href="#" class="nav-link">Pengumuman</a>
+                <a href="#" class="nav-link">Artikel Desa</a>
+                <a href="#" class="nav-link">Agenda Desa</a>
+                <a href="#" class="nav-link">Pengaturan Akun</a>
+            </div>
         </div>
-    </div>
-    <!-- <script> // Optional: Add any additional JavaScript functionality here 
-        document.querySelectorAll('.button').forEach(button => { 
-            button.addEventListener('click', function() { 
-                alert('Tombol ' + this.textContent + ' diklik!'); 
-            }); 
-        }); 
-    </script>  -->
-</body> 
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Desa Rawapanjang, Kabupaten Bogor</h2>
+                <button>Logout</button>
+            </div>
+
+            <div>
+                <h4>Beranda</h4>
+                
+            </div>
+        </div>
+    </body>
 </html>

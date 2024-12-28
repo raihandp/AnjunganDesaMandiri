@@ -7,7 +7,7 @@ use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
 // Code Testing
-Route::view('/test', 'admin.proses-surat');
+Route::view('/test', 'admin.copy-proses-surat');
 Route::view('/login2', 'layanan-mandiri.login.login-copy');
 
 // Route Mockup Baru
