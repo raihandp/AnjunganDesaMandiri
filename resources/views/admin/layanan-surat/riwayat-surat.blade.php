@@ -172,26 +172,26 @@
             </div>
 
             <div class="path">
-                <h4>Layanan Surat > Dalam Proses</h4>
+                <h4>Layanan Surat > Riwayat Surat</h4>
             </div>
 
             <div class="menu-surat">
                 <a href=/kelola-surat>Kelola Surat</a>
-                <a href=/layanan-surat class="active">Dalam Proses</a>
+                <a href=/layanan-surat>Dalam Proses</a>
                 <a href=/surat-ditolak>Arsip Surat Ditolak</a>
-                <a href=/riwayat-surat>Riwayat</a>
+                <a href=/riwayat-surat class="active">Riwayat</a>
 
             </div>
 
             <div class="content">
                 <div class="mt-4">
-                    <h3>Surat Sedang Diproses</h3>
+                    <h3>Riwayat Surat</h3>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th>No.</th>
                                 <th>Aksi</th>
-                                <th>No. Antrean</th>
+                                <th>No. Surat</th>
                                 <th>NIK</th>
                                 <th>Nama Penduduk</th>
                                 <th>No. HP Aktif</th>
@@ -201,34 +201,34 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1</td>
-                                <td><button onclick="window.location.href='/verif-admin';">Menunggu Verifikasi Admin</button></td>
-                                <td>12345</td>
-                                <td>1234567890</td>
-                                <td>Nama Warga</td>
-                                <td>08123456789</td>
-                                <td>Surat Keterangan</td>
-                                <td>01-01-2024</td>
+                                <td>1.</td>
+                                <td><button onclick="window.location.href='/surat-selesai';">Sudah diserahkan ke Warga</button></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>2</td>
-                                <td><button onclick="window.location.href='/persetujuan-kades';">Menunggu Tanda Tangan Kades</button></td>
-                                <td>12346</td>
-                                <td>1234567891</td>
-                                <td>Nama Warga 2</td>
-                                <td>08123456790</td>
-                                <td>Surat Keterangan Nikah</td>
-                                <td>02-01-2024</td>
+                                <td>2.</td>
+                                <td><button onclick="window.location.href='/surat-selesai';">Sudah diserahkan ke Warga</button></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td><button onclick="window.location.href='/surat-selesai';">Belum diserahkan ke Warga</button></td>
-                                <td>12347</td>
-                                <td>1234567892</td>
-                                <td>Nama Warga 3</td>
-                                <td>08123456791</td>
-                                <td>Surat Kuasa</td>
-                                <td>03-01-2024</td>
+                                <td>3.</td>
+                                <td><button onclick="window.location.href='/surat-selesai';">Sudah diserahkan ke Warga</button></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>

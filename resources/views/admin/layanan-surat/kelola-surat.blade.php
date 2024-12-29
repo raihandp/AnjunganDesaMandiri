@@ -172,12 +172,12 @@
             </div>
 
             <div class="path">
-                <h4>Layanan Surat > Dalam Proses</h4>
+                <h4>Layanan Surat > Kelola Surat</h4>
             </div>
 
             <div class="menu-surat">
-                <a href=/kelola-surat>Kelola Surat</a>
-                <a href=/layanan-surat class="active">Dalam Proses</a>
+                <a href=/kelola-surat class="active">Kelola Surat</a>
+                <a href=/layanan-surat>Dalam Proses</a>
                 <a href=/surat-ditolak>Arsip Surat Ditolak</a>
                 <a href=/riwayat-surat>Riwayat</a>
 
@@ -185,53 +185,8 @@
 
             <div class="content">
                 <div class="mt-4">
-                    <h3>Surat Sedang Diproses</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>Aksi</th>
-                                <th>No. Antrean</th>
-                                <th>NIK</th>
-                                <th>Nama Penduduk</th>
-                                <th>No. HP Aktif</th>
-                                <th>Jenis Surat</th>
-                                <th>Tanggal Kirim</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><button onclick="window.location.href='/verif-admin';">Menunggu Verifikasi Admin</button></td>
-                                <td>12345</td>
-                                <td>1234567890</td>
-                                <td>Nama Warga</td>
-                                <td>08123456789</td>
-                                <td>Surat Keterangan</td>
-                                <td>01-01-2024</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><button onclick="window.location.href='/persetujuan-kades';">Menunggu Tanda Tangan Kades</button></td>
-                                <td>12346</td>
-                                <td>1234567891</td>
-                                <td>Nama Warga 2</td>
-                                <td>08123456790</td>
-                                <td>Surat Keterangan Nikah</td>
-                                <td>02-01-2024</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><button onclick="window.location.href='/surat-selesai';">Belum diserahkan ke Warga</button></td>
-                                <td>12347</td>
-                                <td>1234567892</td>
-                                <td>Nama Warga 3</td>
-                                <td>08123456791</td>
-                                <td>Surat Kuasa</td>
-                                <td>03-01-2024</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h3>Kelola Surat</h3>
+                    
                 </div>                
             </div>
         </div>

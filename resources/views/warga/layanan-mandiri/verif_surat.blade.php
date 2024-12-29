@@ -22,7 +22,8 @@
     .preview-container {
       border: 1px solid #ddd;
       padding: 10px;
-      width: 80%;
+      width: 900px;
+      height: 500px;          
     }
     .form {
       margin-top: 30px;
@@ -51,6 +52,30 @@
     .button:hover {
       background-color: darkorange;
     }
+        .lightbox_container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .lightbox_container.show {
+            display: flex;
+        }
+        .lightbox_content {
+            background: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .lightbox_content button {
+            margin: 20px 10px;
+        }
   </style>
 </head>
 <body>
@@ -60,7 +85,7 @@
       <h3>Apakah data yang Anda masukkan sudah sesuai?</h3>
     </div>
     <div class="preview-container">
-      <iframe src="/skd" width="100%" height="400px"></iframe>
+      <iframe src="/skd" width="100%" height="100%"></iframe>
     </div>
     <div class="form">
       <label style="margin-bottom: 10px;">Nomor Ponsel :</label>
@@ -69,15 +94,47 @@
     <p>(Bila surat sudah selesai diproses akan kami hubungi ke nomor yang Anda masukkan)</p>
     <div class="button-container">
       <button class="button" onclick="window.history.back();">Kembali</button>
-      <button type="submit" class="button" onclick="window.location.href='/berhasil';">Lanjutkan</button>
+      <button type="submit" class="button" id="openLightbox">Lanjutkan</button>
     </div>
+
+    <div class="lightbox_container" id="lightbox">
+        <div class="lightbox_content">
+            <h2>Ajukan Surat Ini?</h2>
+            <p>Surat akan dilanjutkan ke Kepala Desa untuk diberikan persetujuan.</p>
+            <button class="button" id="cancelButton">Kembali</button>
+            <button class="button" id="confirmButton">Lanjutkan</button>
+        </div>
+    </div>
+
   </div>
 
   <script>
-    function submitForm() {
-      // Logika untuk mengirim data form
-      alert("Form akan dikirim!");
-    }
+    const lightbox = document.getElementById('lightbox');
+    const openLightboxButton = document.getElementById('openLightbox');
+    const cancelButton = document.getElementById('cancelButton');
+    const confirmButton = document.getElementById('confirmButton');
+
+    // Menampilkan lightbox saat tombol "Lanjutkan" diklik
+    openLightboxButton.addEventListener('click', () => {
+        lightbox.classList.add('show');
+    });
+
+    // Menutup lightbox saat tombol "Kembali" diklik
+    cancelButton.addEventListener('click', () => {
+        lightbox.classList.remove('show');
+    });
+
+    // Menangani aksi saat tombol "Lanjutkan" diklik
+    confirmButton.addEventListener('click', () => {
+        window.location.href='/berhasil';
+    });
+
+    // Menutup lightbox saat area luar lightbox-content diklik
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+            lightbox.classList.remove('show');
+        }
+    });
   </script>
 </body>
 </html>

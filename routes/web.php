@@ -7,7 +7,7 @@ use App\Http\Controllers\SuratController;
 use App\Http\Controllers\SKDController;
 
 // Code Testing
-Route::view('/test', 'admin.tests.test');
+Route::view('/test', 'admin.tests.1test');
 
 // Route Mockup Baru
     Route::view('/', 'onboarding');
@@ -52,11 +52,21 @@ Route::view('/test', 'admin.tests.test');
         Route::view('/info-desa', 'admin.info-desa');
         Route::view('/data-warga', 'admin.data-warga');
         Route::view('/statistik', 'admin.statistik');
-        Route::view('/layanan-surat', 'admin.layanan-surat.dalam-proses');
         Route::view('/pengumuman', 'admin.pengumuman');
         Route::view('/artikel-desa', 'admin.artikel-desa');
         Route::view('/agenda', 'admin.agenda');
         Route::view('/pengaturan-akun', 'admin.pengaturan-akun');
+
+        // Layanan Surat
+            Route::view('/layanan-surat', 'admin.layanan-surat.dalam-proses');
+            Route::view('/surat-ditolak', 'admin.layanan-surat.surat-ditolak');
+            Route::view('/riwayat-surat', 'admin.layanan-surat.riwayat-surat');
+            Route::view('/kelola-surat', 'admin.layanan-surat.kelola-surat');
+
+        // Proses Surat
+            Route::view('/verif-admin', 'admin.layanan-surat.proses-surat.verif-admin');
+            Route::view('/persetujuan-kades', 'admin.layanan-surat.proses-surat.persetujuan-kades');
+            Route::view('/surat-selesai', 'admin.layanan-surat.proses-surat.surat-selesai');
 
     // ----- Ends of Views Admin Desa ----- //
 
