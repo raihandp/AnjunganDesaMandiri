@@ -176,7 +176,7 @@
                 padding: 20px 40px;
                 border-radius: 10px;
                 text-align: center;
-                min-width: 500px;
+                width: 500px;
             }
             .lightbox_content button {
                 margin: 20px 10px;

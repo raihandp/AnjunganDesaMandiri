@@ -5,8 +5,11 @@
   <style>
     body {
       font-family: sans-serif;
-      color: white;
-      background: linear-gradient(to top, #ff9472, #f2709c);
+      /* color: white; */
+      background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
       margin: 30px;
     }
     .container {

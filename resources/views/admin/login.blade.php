@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Anjungan Desa Mandiri</title>
+    <title>Login Admin - Anjungan Desa Mandiri</title>
     <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style>
         body { 
             margin: 0;
             font-family: sans-serif;
-            background: linear-gradient(to top, #ff9472, #f2709c);
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         .header {
-            color: white;
+            /* color: white; */
             text-align: center;
             padding: 30px;
         }
@@ -87,6 +90,8 @@
             width: 100%;
             color: white;
             text-align: center;
+            background-color: rgba(255, 153, 0, 0.5);
+            border: 2px solid rgba(0, 0, 0, 0.0);
             margin-top: 30px;
         }
         .credit {

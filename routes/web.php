@@ -11,6 +11,7 @@ Route::view('/test', 'admin.tests.1test');
 
 // Route Mockup Baru
     Route::view('/', 'onboarding');
+    Route::view('/onboarding', 'onboarding');
     Route::view('/warga', 'warga.halaman_utama')->name('halaman_utama'); //Lanjut ke views warga
     Route::view('/admin', 'admin.login'); //Lanjut ke views admin
 
@@ -19,7 +20,7 @@ Route::view('/test', 'admin.tests.1test');
     // ----- Views Warga ----- //
 
         // Menu Profil Desa
-        Route::view('/pengumuman', 'warga.profil_desa.pengumuman');
+        Route::view('/pengumuman-warga', 'warga.profil_desa.pengumuman');
         Route::view('/tentang-desa-rawapanjang', 'warga.profil_desa.tentang-desa');
         Route::view('/agenda-rawapanjang', 'warga.profil_desa.agenda');
         Route::view('/lapak-warga', 'warga.profil_desa.lapak');
@@ -70,20 +71,20 @@ Route::view('/test', 'admin.tests.1test');
 
     // ----- Ends of Views Admin Desa ----- //
 
+
 // ====================================================================== //
 
 
-
 // Menu Login
-Route::get('/login', [LoginController::class, 'showNikForm'])->name('login.showNikForm');
-Route::post('/login/check-nik', [LoginController::class, 'checkNik'])->name('login.checkNik');
-Route::get('/login/pin/{nik}', [LoginController::class, 'showPinForm'])->name('login.showPinForm');
-Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('login.checkPin');
+// -- Route::get('/login', [LoginController::class, 'showNikForm'])->name('login.showNikForm');
+// -- Route::post('/login/check-nik', [LoginController::class, 'checkNik'])->name('login.checkNik');
+// -- Route::get('/login/pin/{nik}', [LoginController::class, 'showPinForm'])->name('login.showPinForm');
+// -- Route::post('/login/check-pin', [LoginController::class, 'checkPin'])->name('login.checkPin');
 
 // Fitur utama
-Route::view('/', 'halaman_utama')->name('halaman_utama');
-Route::view('/layanan_digital', 'other.surat_digital');
-Route::view('/profil_desa', 'other.profil_desa');
+// -- Route::view('/', 'halaman_utama')->name('halaman_utama');
+// -- Route::view('/layanan_digital', 'other.surat_digital');
+// -- Route::view('/profil_desa', 'other.profil_desa');
 
 // Preview Surat
 // use -- Route::view('/skd', 'preview_surat.surat_ket_domisili');
@@ -96,7 +97,7 @@ Route::view('/profil_desa', 'other.profil_desa');
 
 // Route::get('/preview-surat', 'SKDController@preview')->name('preview.surat');
 
-Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm']);
+// -- Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm']);
 // Route::post('/sk-domisili/submit', [skDomisiliController::class, 'submitForm']);
 
 // Route::get('/surat-domisili', [SuratController::class, 'showForm'])->name('surat.showForm');
@@ -107,6 +108,6 @@ Route::get('/surat_keterangan_domisili', [skDomisiliController::class, 'showForm
 // });
 
 // Halaman Profil Desa
-Route::view('/tentang_kami', 'profil_desa.tentang_kami');
-Route::view('/visi_misi', 'profil_desa.visi_misi');
-Route::view('/sejarah_desa', 'profil_desa.sejarah_desa');
+// -- Route::view('/tentang_kami', 'profil_desa.tentang_kami');
+// -- Route::view('/visi_misi', 'profil_desa.visi_misi');
+// -- Route::view('/sejarah_desa', 'profil_desa.sejarah_desa');

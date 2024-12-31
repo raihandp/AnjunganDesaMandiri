@@ -9,8 +9,11 @@
         body {
             margin: 0;
             font-family: sans-serif;
-            background: linear-gradient(to top, #ff9472, #f2709c);
-            color: white;
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* color: white; */
         }
         .page-content {
             padding: 30px 50px 0 50px;

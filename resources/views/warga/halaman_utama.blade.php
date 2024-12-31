@@ -8,17 +8,16 @@
     <style> 
         body { 
             margin: 0; 
-            background: linear-gradient(to top, #ff9472, #f2709c);
             font-family: sans-serif; 
             overflow-x: hidden; 
-            /* background-image: url('AnjunganDesaMandiri\assets\Background Mockup Anjungan.png');
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
             background-size: cover;
+            background-repeat: no-repeat;
             background-position: center;
-            background-repeat: no-repeat; */
             height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
         }
         .header {
-            color: white;
+            /* color: white; */
             text-align: center;
         }
         .video-container {
@@ -27,7 +26,7 @@
             justify-content: center;
             align-items: center;
             border: 2px solid #ffffff;
-            color: white;
+            /* color: white; */
             width: 100%;
         }
         .button-container {
@@ -38,7 +37,7 @@
             padding: 20px;
             padding-top: 0px;
             gap: 20px;
-            scrollbar-width: none; Sembunyikan scrollbar di Edge, Chrome
+            scrollbar-width: none; /* Sembunyikan scrollbar di Edge, Chrome */
         }
         .button {
             display: flex;
@@ -65,27 +64,29 @@
         .footer {
             /* position: fixed;
             bottom: 0; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             width: 100%;
+            height: 150px;
             color: white;
             text-align: center;
+            background-color: rgba(255, 153, 0, 0.5);
+            border: 2px solid rgba(0, 0, 0, 0.0);
+            padding-bottom: 30px;
         }
         .credit {
+            position: fixed;
+            bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 30px;
+            width: 100%;
             font-size: 12px;
             background-color: #ff9900;
             color: white;
         }
-        /* .colors {
-            color: #888;
-            color: #555;
-            color: #4caf50;
-            background: #388e3c;
-            color: #333;
-            color: #fff;
-        } */
     </style>
 </head> 
 <body> 
@@ -102,7 +103,7 @@
         <div class="button-container"> 
             <!-- <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button> -->
             <a href='/login-nik' class="button">Layanan <br>Mandiri</a> 
-            <a href='/pengumuman' class="button">Pengumuman</a> 
+            <a href='/pengumuman-warga' class="button">Pengumuman</a> 
             <a href='/tentang-desa-rawapanjang' class="button">Tentang Desa <br>Rawapanjang</a> 
             <a href='/agenda-rawapanjang' class="button">Agenda <br>Rawapanjang</a> 
             <a href='/lapak-warga' class="button">Lapak</a> 

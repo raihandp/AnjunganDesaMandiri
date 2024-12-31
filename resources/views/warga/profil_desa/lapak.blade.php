@@ -8,12 +8,15 @@
     <style> 
         body { 
             margin: 0; 
-            background: linear-gradient(to top, #ff9472, #f2709c);
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             font-family: sans-serif; 
             height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
         }
         .header {
-            color: white;
+            /* color: white; */
             text-align: center;
             border: 2px solid #ffffff;
         }
@@ -21,7 +24,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            /* color: white; */
             width: 100%;
         }
         .button-container {

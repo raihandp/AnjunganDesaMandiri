@@ -8,7 +8,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to top, #ff9472, #f2709c);
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             display: flex;
             justify-content: center;
         }

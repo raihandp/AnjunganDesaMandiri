@@ -10,8 +10,11 @@
             justify-content: center;
             align-items: center;
             margin: 0; 
-            background: linear-gradient(to top, #ff9472, #f2709c);
-            color: white;
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* color: white; */
             font-family: sans-serif; 
             text-align: center;
             height: 100vh;
@@ -54,6 +57,7 @@
     <div>
         <h1>Surat telah berhasil dibuat</h1>
         <p>Kami akan segera menghubungi Anda begitu surat selesai diproses</p>
+        <br><br>
         <div class="button-container">
             <a href='/warga' class="button">Halaman Utama</a> 
         </div>

@@ -10,10 +10,13 @@
             height: 100vh;
             margin: 0;
             font-family: sans-serif;
-            background: linear-gradient(to top, #ff9472, #f2709c);
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         .header {
-            color: white;
+            /* color: white; */
             text-align: center;
             padding: 20px;
         }

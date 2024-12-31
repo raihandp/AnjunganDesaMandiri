@@ -7,18 +7,18 @@
     <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
     <style> 
         body { 
+            /* background: linear-gradient(to top, #ff9472, #f2709c); */
             margin: 0; 
-            background: linear-gradient(to top, #ff9472, #f2709c);
             font-family: sans-serif; 
-            overflow-x: hidden; 
-            /* background-image: url('AnjunganDesaMandiri\assets\Background Mockup Anjungan.png');
+            overflow-x: hidden;
+            /* height: 100vh; Mengatur tinggi body agar menutupi seluruh viewport */
+            background-image: url('{{ asset('assets/Background Mockup Anjungan.png') }}');
             background-size: cover;
+            background-repeat: no-repeat;
             background-position: center;
-            background-repeat: no-repeat; */
-            height: 100vh; /* Mengatur tinggi body agar menutupi seluruh viewport */
         }
         .header {
-            color: white;
+            /* color: white; */
             text-align: center;
         }
         .video-container {
@@ -26,8 +26,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #ffffff;
-            color: white;
+            border: 2px solid #000000;
+            /* color: white; */
             width: 100%;
         }
         .button-container {
@@ -38,7 +38,7 @@
             padding: 20px;
             padding-top: 0px;
             gap: 20px;
-            scrollbar-width: none; Sembunyikan scrollbar di Edge, Chrome
+            scrollbar-width: none; /* Sembunyikan scrollbar di Edge, Chrome */
         }
         .button {
             display: flex;
@@ -65,15 +65,26 @@
         .footer {
             /* position: fixed;
             bottom: 0; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+            height: 150px;
             color: white;
             text-align: center;
+            background-color: rgba(255, 153, 0, 0.5);
+            border: 2px solid rgba(0, 0, 0, 0.0);
+            padding-bottom: 30px;
         }
         .credit {
+            position: fixed;
+            bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 30px;
+            width: 100%;
             font-size: 12px;
             background-color: #ff9900;
             color: white;
@@ -94,7 +105,7 @@
         <h3>Desa Rawapanjang Kabupaten Bogor</h3> 
     </div> 
     <div class="video-container"> 
-        <p>Video Profil Desa</p>
+        <!-- <p>Video Profil Desa</p> -->
         <!-- <video controls> <source src="video-profil-desa.mp4" type="video/mp4"> Replace with your video source Your browser does not support the video tag. </video>  -->
     </div> 
     <div class="footer">
@@ -108,12 +119,5 @@
             <p>&copy;</p>
         </div>
     </div>
-    <!-- <script> // Optional: Add any additional JavaScript functionality here 
-        document.querySelectorAll('.button').forEach(button => { 
-            button.addEventListener('click', function() { 
-                alert('Tombol ' + this.textContent + ' diklik!'); 
-            }); 
-        }); 
-    </script>  -->
 </body> 
 </html>
