@@ -22,6 +22,8 @@ return new class extends Migration
             $table->integer('rt');
             $table->integer('rw');
             $table->string('keperluan');
+            $table->string('no_hp');
+            $table->string('status');
             $table->timestamps();
         });
     }
