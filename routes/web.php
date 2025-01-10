@@ -30,7 +30,7 @@ use App\Http\Controllers\SuratController;
         Route::get('/pilih-surat', [LoginController::class, 'showMenu'])->name('pilih-surat');
 
         // Layanan Mandiri - Input Form Surat
-        Route::get('/surat-keterangan-domisili', [SuratController::class, 'form_Surat_Keterangan_Domisili']);
+        Route::get('/form-surat-keterangan-domisili', [SuratController::class, 'form_Surat_Keterangan_Domisili']);
         Route::post('/submitForm', [SuratController::class, 'submitForm']);
         Route::get('/verifikasi', [SuratController::class, 'verifikasi']);
         Route::view('/verif', 'warga.layanan-mandiri.verif_surat');

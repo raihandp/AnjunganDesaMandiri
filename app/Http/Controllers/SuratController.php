@@ -45,7 +45,19 @@ class SuratController extends Controller
     public function verifikasi(Request $request)
     {
         $proses_surat = ProsesSurat::all(); // Ambil semua data dari tabel proses_surats
+        // echo("<pre>");  
+        // print_r($proses_surat); 
+        // echo("</pre>");    
+        // die();
+
+        // kelar programnya
+        // presentasi sama dekanat dan undangan
+        // revisi program
+        // sosialisasi & serah terima
+        // sidang akhir banget insyaa allah
+        // insyaa allah bisa lulus sidang & lanjut wisuda
 
         return view('warga.layanan-mandiri.verif_surat', ['proses_surat' => $proses_surat]);
+        // return view('warga.layanan-mandiri.verif_surat');
     }
 }
