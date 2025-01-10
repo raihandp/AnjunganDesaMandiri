@@ -33,6 +33,7 @@ use App\Http\Controllers\SuratController;
         Route::get('/surat-keterangan-domisili', [SuratController::class, 'form_Surat_Keterangan_Domisili']);
         Route::post('/submitForm', [SuratController::class, 'submitForm']);
         Route::get('/verifikasi', [SuratController::class, 'verifikasi']);
+        Route::view('/verif', 'warga.layanan-mandiri.verif_surat');
 
         // Layanan Mandiri - Preview Surat
         Route::view('/skd', 'warga.layanan-mandiri.preview-surat.surat_ket_domisili');
