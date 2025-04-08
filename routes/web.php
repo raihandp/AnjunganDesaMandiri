@@ -43,6 +43,9 @@ Route::view('/kabar-pembanguan', 'warga.profil_desa.kabar_pembangunan')->name('k
 Route::middleware(['isAdmin'])->group(function () {
     Route::get('/dashboard', [LoginController::class, 'showDashboard'])->name('dashboard');
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+    Route::get('/pilih-surat', [LoginController::class, 'showMenu'])->name('pilih-surat');
+
     Route::view('/layanan-umum', 'warga.layanan-mandiri.layanan_umum')->name('layanan-umum');
     Route::view('/layanan-kependudukan', 'warga.layanan-mandiri.layanan_kependudukan')->name('layanan-kependudukan');
     ROute::view('/layanan-pernikahan', 'warga.layanan-mandiri.layanan_pernikahan')->name('layanan-pernikahan');

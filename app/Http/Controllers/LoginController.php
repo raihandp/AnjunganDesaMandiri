@@ -156,6 +156,11 @@ class LoginController extends Controller
         return view('warga.dashboard_warga');
     }
 
+    public function showMenu()
+    {
+        return view('warga.layanan-mandiri.pilih-surat');
+    }
+
     public function logout(Request $request)
     {
         auth()->guard('warga')->logout();

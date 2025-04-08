@@ -89,7 +89,7 @@
 
 <body>
     <div class="page-content">
-        {{-- <h2>Selamat Datang, {{auth('warga')->user()->nama_lengkap}}</h2> --}}
+        <h2>Selamat Datang, {{auth('warga')->user()->nama_lengkap}}</h2>
         <h3>Silahkan pilih surat yang ingin Anda ajukan.</h3>
         <!-- Tombol Pilihan Surat -->
         <div class="button-container">
