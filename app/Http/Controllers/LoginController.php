@@ -26,7 +26,7 @@ class LoginController extends Controller
 
         $credentials = $request->only('username', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->route('admin-beranda');
+            return redirect()->route('layanan-surat-dalam-proses');
         }
 
         session()->flash('error', 'Username atau Password salah');

@@ -1,0 +1,111 @@
+[33m6f2db0a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mr-edit[m[33m, [m[1;31mupstream/main[m[33m, [m[1;31morigin/r-edit[m[33m, [m[1;32mnama-branch[m[33m, [m[1;32mmain[m[33m)[m Chore : add comment in login controller
+[33mb66faa1[m Feat : can create surat wali hakim , in layanan surat use blade template
+[33me67c9f6[m Feat : scan ktp
+[33m7bcdb53[m Chore : Use component blade in layanan surat
+[33m6e2da8b[m Chore : auth for warga , nama file
+[33m22809c9[m Chore : layout warga , auth warga
+[33m1900280[m Chore : mengganti amdin controller dengan warga controller
+[33m2d1fee9[m Chore : layannan surat dapat megenrate surat keterangan pengantar , Feat : bisa menampilkan data warga , Chore : penggunaan @components pada blade di admin
+[33m2d576f0[m Feat : PDF can show image
+[33m92a1bb2[m Feat : Layanan surat bisa verifikasi admin dan ttd kades
+[33ma00447d[m Initial Commit
+[33m672ab65[m Feat : warga menginput surat ket domisili
+[33m8e299d7[m vendor
+[33m179229d[m update skktpdp
+[33mbee6036[m update skktpdp
+[33ma64e633[m update skck
+[33m3bfdf6f[m update tambah opsi surat
+[33mded984b[m update tambah opsi surat
+[33mf3b07e5[m update skp
+[33m7bf64f5[m update skp
+[33mfb675de[m update
+[33md17470a[m update tampilan warga - opsi skp
+[33m9795107[m update
+[33m1ff0bf3[m update halaman dashboard admin - dalam proses
+[33m4939bd6[m update
+[33md2d1f3f[m update
+[33mcc8e26b[m update
+[33m5685590[m update
+[33m1292225[m update database form surat
+[33medecfb1[m update login warga
+[33m6ef5d63[m update
+[33m128748c[m upload background anjungan
+[33md8ec020[m upload background anjungan
+[33m5691e11[m update layanan-surat
+[33mf44221e[m update layanan-surat
+[33mf13e4d3[m update views admin
+[33m0871b20[m update views beranda admin
+[33m51721fb[m coba views admin
+[33mb3a216a[m update views
+[33m18c59c0[m update views tampilan warga
+[33mea0185a[m update views halaman login
+[33mfb63804[m update
+[33m6afc15f[m test upload background img
+[33m0de1e5a[m update halaman depan
+[33mc3c0f37[m test login
+[33m93ffea9[m update
+[33me44709c[m update verif
+[33m4ce0bae[m update verif
+[33md7da0e1[m Update README.md
+[33m5e897bc[m update routes & views
+[33m86a8f71[m upload logo rawapanjang
+[33m857fb8e[m upload logo rawapanjang
+[33m556b8c0[m upload logo rawapanjang
+[33me76183d[m update routing
+[33me890dfc[m update routing
+[33m3906037[m update halaman verif
+[33m6f36a61[m update surat-surat (resources/views)
+[33m6278012[m update surat keterangan domisili (resources/views)
+[33m4d6e7d3[m cek route
+[33mf9085cf[m update isi form surat domisili
+[33m2f6b306[m Delete Sample Surat/~$01_surat_ket_pengantar.docx
+[33m3fa9c94[m Delete Sample Surat/~$41_surat_kuasa.docx
+[33m38537ad[m Delete Sample Surat/~$41_surat_kuasa.pdf
+[33m9667f67[m update readme.md
+[33m80fb418[m update readme.md
+[33m61c84d2[m update surat
+[33mfc5a850[m Merge branch 'master' of https://github.com/raihandp/AnjunganDesaMandiri
+[33mc8025ca[m update
+[33mab80aef[m Delete README-copy.md
+[33m7cb2f31[m Merge branch 'raihan' of https://github.com/raihandp/AnjunganDesaMandiri
+[33m26afa8c[m update
+[33m305a995[m Update README.md
+[33m2e6f035[m Merge pull request #2 from raihandp/raihan
+[33maf22c98[m Merge branch 'master' into raihan
+[33mbc4c31f[m Update README.md
+[33mb9f5296[m Update README.md
+[33ma8e7a5a[m Update README.md
+[33mef83d66[m Update README.md
+[33m5648421[m Update README.md
+[33m0cb9768[m Update README.md
+[33madfa8c9[m Update README.md
+[33m1fbc328[m Update README.md
+[33m229e897[m Update README.md
+[33mca583c4[m Update README.md
+[33m49d8193[m Update README.md
+[33m16e998a[m update readme.md
+[33mcc6b803[m update readme.md
+[33mcc9bbf6[m update readme.md
+[33m107b279[m update readme.md
+[33mf4f677b[m update readme.md
+[33m04bec24[m update readme.md
+[33m58990f8[m update readme.md
+[33md3a3513[m update readme.md
+[33maa5f205[m update readme.md
+[33m57a80a3[m update
+[33m0a38962[m update login NIK + PIN
+[33m0705c3e[m tambah tabel warga, modify ekstensi resource/views jadi blade.php
+[33ma593647[m update
+[33m0829960[m update link logo, env.
+[33m16191f1[m Merge pull request #1 from raihandp/vendor
+[33m39cef7c[m Delete vendor directory
+[33m03a54c0[m upload folder vendor 4
+[33m59ebd14[m upload folder vendor 3
+[33m10c4f35[m upload folder vendor 2
+[33m05d4828[m upload folder vendor 1
+[33m3ccede7[m upload folder vendor
+[33mca97bc3[m Add files via upload
+[33m9c4e2a5[m upload folder vendor
+[33mc11bac3[m upload folder vendor
+[33m17bc4bf[m upload folder vendor
+[33m7903fc8[m Commit pertama
