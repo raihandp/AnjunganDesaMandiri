@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="icon" href="{{asset('assets/logo.png')}}" type="image/png">
-    {{--
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"> --}}
+    <!-- <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"> -->
     <style>
         body {
             margin: 0;
@@ -17,8 +16,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
-            /* Mengatur tinggi body agar menutupi seluruh viewport */
+            height: 100vh;   /* Mengatur tinggi body agar menutupi seluruh viewport */
         }
 
         .form-container {
@@ -251,7 +249,7 @@
 
         .footer {
             /* position: fixed;
-    bottom: 0; */
+            bottom: 0; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -283,9 +281,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 30px;
+            text-align: center;
+            height: 40px;
             width: 100%;
-            font-size: 12px;
+            font-size: 14px;
             background-color: #ff9900;
             color: white;
         }
@@ -293,22 +292,20 @@
 </head>
 
 <body>
-
     <div class="header">
         <h2>
             @yield('header')
         </h2>
     </div>
-    {{-- <div class="video-container">
-        <p>Video Profil Desa</p>
-        <!-- <video controls> <source src="video-profil-desa.mp4" type="video/mp4"> Replace with your video source Your browser does not support the video tag. </video>  -->
-    </div> --}}
     <div class="page-content">
         @yield('content')
     </div>
     @yield('form-container')
     @yield('back-button')
     @yield('footer')
+    <div class="credit">
+        <p>&copy; Raihan Darmawan Pringgodigdo, Trisna Wahyu Mukti, Fakultas Ilmu Komputer<br>Universitas Pembangunan Nasional "Veteran" Jakarta</p>
+    </div>
 </body>
 
 </html>
