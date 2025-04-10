@@ -142,7 +142,7 @@ class LoginController extends Controller
                 'password' => $credentials['pin'],
             ]);
             if ($res) {
-                return redirect()->route('dashboard');
+                return redirect()->route('pilih-surat');
             }
         } catch (\Exception $e) {
             session()->flash('error', 'PIN salah');
