@@ -110,8 +110,22 @@
 
 <body>
     <div class="container">
-        <div class="header">
-            <h2>{{ $proses_surat['jenis_surat'] }}</h2>
+        <div class="header">            
+            @if ($proses_surat['jenis_surat'] == "SKD")
+                <h2>Surat Keterangan Domisili</h2>
+            @elseif ($proses_surat['jenis_surat'] == "SKP")
+                <h2>Surat Keterangan Pengantar</h2>
+            @elseif ($proses_surat['jenis_surat'] == "SKKTPDP")
+                <h2>Surat Keterangan KTP Dalam Proses</h2>
+            @elseif ($proses_surat['jenis_surat'] == "SPKK")
+                <h2>Surat Permohonan Kartu Keluarga</h2>
+            @elseif ($proses_surat['jenis_surat'] == "SPPKK")
+                <h2>Surat Permohonan Perubahan Kartu Keluarga</h2>
+            @elseif ($proses_surat['jenis_surat'] == "SKCK")
+                <h2>Surat Keterangan Catatan Kriminal</h2>
+            @elseif ($proses_surat['jenis_surat'] == "SKWH")
+                <h2>Surat Keterangan Wali Hakim</h2>
+            @endif
             <h3>Apakah data yang Anda masukkan sudah sesuai?</h3>
         </div>
         <div class="preview-container">
@@ -119,8 +133,14 @@
             <iframe src="/skd" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SKP")
             <iframe src="/skp" width="100%" height="100%"></iframe>
-            @elseif ($proses_surat['jenis_surat'] == "SKTM")
+            @elseif ($proses_surat['jenis_surat'] == "SKKTPDP")
             <iframe src="/skktpdp" width="100%" height="100%"></iframe>
+            @elseif ($proses_surat['jenis_surat'] == "SPKK")
+            <iframe src="/spkk" width="100%" height="100%"></iframe>
+            @elseif ($proses_surat['jenis_surat'] == "SPPKK")
+            <iframe src="/sppkk" width="100%" height="100%"></iframe>
+            @elseif ($proses_surat['jenis_surat'] == "SKCK")
+            <iframe src="/skck" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SKWH")
             <iframe src="/skwh" width="100%" height="100%"></iframe>
             @endif
