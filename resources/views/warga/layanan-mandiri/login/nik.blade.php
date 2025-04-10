@@ -132,13 +132,7 @@
             <div class="right-col" style="text-align: center">
                 <div>
                     <h1>Selamat Datang</h1>
-                    <h2>Silahkan <a href="{{route('pindai-ktp')}}">pindai</a> E-KTP anda untuk masuk </h2>
-                </div>
-                <div>
-                    <p>atau</p>
-                </div>
-                <div>
-                    <h3>Masukan Nomor KTP Anda</h3>
+                    <h2>Silahkan Masukan Nomor KTP Anda</h2>
                     <form action="{{route('login.checkNik')}}" method="POST">
                         @csrf
                         <input type="number" name="nik" />
@@ -146,7 +140,7 @@
                         <p style="color: red;">{{session('error')}}</p>
                         @endif
                         <div style="display: flex; justify-content: center; align-items: center;">
-                            <button type="submit" class="button">Cek</button>
+                            <button type="submit" class="button">Lanjutkan</button>
                         </div>
                     </form>
                 </div>

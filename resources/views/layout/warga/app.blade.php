@@ -259,7 +259,7 @@
             text-align: center;
             /* background-color: rgba(255, 153, 0, 0.5); */
             border: 2px solid rgba(0, 0, 0, 0.0);
-            padding-bottom: 30px;
+            padding-bottom: 50px;
         }
 
         .footer h3 {
@@ -293,9 +293,7 @@
 
 <body>
     <div class="header">
-        <h2>
-            @yield('header')
-        </h2>
+        @yield('header')
     </div>
     <div class="page-content">
         @yield('content')
