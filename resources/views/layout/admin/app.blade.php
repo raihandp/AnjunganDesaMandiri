@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
+    <link rel="icon" href="{{ asset('assets/logo.png') }}" type="image/png">
 </head>
 
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
-            </svg>
+            </svg> -->
+            <img src="{{ asset('assets/logo.png') }}" alt="Logo Desa" height="100">
             <h3>{{auth()->user()->name}}</h3>
             <p>Desa Rawapanjang <br> Kabupaten Bogor</p>
         </div>
