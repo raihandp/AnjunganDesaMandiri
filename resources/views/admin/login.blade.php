@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin - Anjungan Desa Mandiri</title>
-    <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
+    <link rel="icon" href="{{ asset('assets/logo.png') }}" type="image/png">
     <style>
         body {
             margin: 0;
@@ -138,9 +138,10 @@
     </h2>
     @endif
     <div class="header">
-        <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" alt="Logo Desa" />
+        <img src="{{ asset('assets/logo.png') }}" alt="Logo Desa" height="100">
         <h1>Anjungan Desa Mandiri</h1>
-        <h2>Desa Rawapanjang<br>Kabupaten Bogor</h2>
+        <h1>Desa Rawapanjang</h1>
+        <h2>Kecamatan Bojonggede - Kabupaten Bogor</h2>
     </div>
     <div class="page-content">
         <div class="login-container">
