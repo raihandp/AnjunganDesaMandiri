@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surat Keterangan Domisili</title>
-    <link rel="icon"
-        href="https://rawapanjang-bojonggede.desa.id/assets/files/data/website-desa-rawapanjang-3201132008/images/logo_pemkab_bogor.png"
-        type="image/png">
+    <link rel="icon" href="{{asset('assets/logo.png')}}" type="image/png">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +15,7 @@
             background-position: center;
             display: flex;
             justify-content: center;
-            height: 100vh;
+            /* height: 100vh; */
         }
 
         .form-container {
