@@ -69,15 +69,21 @@
             color: white;
             text-align: center;
         }
+
         .credit {
+            position: fixed;
+            bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 30px;
-            font-size: 12px;
+            text-align: center;
+            height: 40px;
+            width: 100%;
+            font-size: 14px;
             background-color: #ff9900;
             color: white;
         }
+    </style>
     </style>
 </head>
 <body>
@@ -115,7 +121,7 @@
             <a href='/warga' class="button">Halaman Utama</a> 
         </div> 
         <div class="credit">
-            <p>&copy;</p>
+            <p>&copy; Raihan Darmawan Pringgodigdo, Trisna Wahyu Mukti, Fakultas Ilmu Komputer<br>Universitas Pembangunan Nasional "Veteran" Jakarta</p>
         </div>
     </div>
 </body>
