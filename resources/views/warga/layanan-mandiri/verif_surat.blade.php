@@ -3,6 +3,7 @@
 
 <head>
     <title>Preview Surat</title>
+    <link rel="icon" href="{{asset('assets/logo.png')}}" type="image/png">
     <style>
         body {
             font-family: sans-serif;
