@@ -130,19 +130,19 @@
         </div>
         <div class="preview-container">
             @if ($proses_surat['jenis_surat'] == "SKD")
-            <iframe src="/skd" width="100%" height="100%"></iframe>
+                <iframe src="/skd" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SKP")
-            <iframe src="/skp" width="100%" height="100%"></iframe>
+                <iframe src="/skp" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SKKTPDP")
-            <iframe src="/skktpdp" width="100%" height="100%"></iframe>
+                <iframe src="/skktpdp" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SPKK")
-            <iframe src="/spkk" width="100%" height="100%"></iframe>
+                <iframe src="/spkk" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SPPKK")
-            <iframe src="/sppkk" width="100%" height="100%"></iframe>
+                <iframe src="/sppkk" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SKCK")
-            <iframe src="/skck" width="100%" height="100%"></iframe>
+                <iframe src="/skck" width="100%" height="100%"></iframe>
             @elseif ($proses_surat['jenis_surat'] == "SKWH")
-            <iframe src="/skwh" width="100%" height="100%"></iframe>
+                <iframe src="/skwh" width="100%" height="100%"></iframe>
             @endif
         </div>
         <form action="#" method="POST">
