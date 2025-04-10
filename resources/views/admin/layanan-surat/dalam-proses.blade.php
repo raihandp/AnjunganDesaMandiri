@@ -37,7 +37,7 @@
                     <td>{{$surat->jenis_surat}}</td>
                     <td>{{date($surat->created_at)}}</td>
                     @empty
-                    <td colspan="7" style="text-align: center">Surat Sudah diverifikasi semua oleh admin</td>
+                    <td colspan="7" style="text-align: center">Surat sudah diverifikasi semua oleh admin</td>
                 </tr>
                 @endforelse
                 <tr>

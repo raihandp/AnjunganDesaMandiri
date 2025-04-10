@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layanan Mandiri - Anjungan Desa Mandiri Desa Rawapanjang</title>
-    <link rel="icon" href="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" type="image/png">
+    <link rel="icon" href="{{ asset('assets/Logo-Kab-Bogor.png') }}" type="image/png">
     <style>
         body {
             margin: 0;
@@ -16,16 +15,13 @@
             background-position: center;
             /* color: white; */
         }
-
         .page-content {
             padding: 30px 50px 0 50px;
         }
-
         .button-container {
             display: flex;
             justify-content: center;
         }
-
         .button {
             display: flex;
             justify-content: center;
@@ -48,7 +44,6 @@
             font-weight: bold;
             text-align: center;
         }
-
         .button:hover {
             background-color: darkorange;
         }
@@ -74,7 +69,6 @@
             color: white;
             text-align: center;
         }
-
         .credit {
             display: flex;
             justify-content: center;
@@ -86,28 +80,25 @@
         }
     </style>
 </head>
-
 <body>
-    <div class="page-content">
+    <div class="page-content"> 
         <h2>Selamat Datang, {{auth('warga')->user()->nama_lengkap}}</h2>
         <h3>Silahkan pilih surat yang ingin Anda ajukan.</h3>
         <!-- Tombol Pilihan Surat -->
         <div class="button-container">
             <a href='/surat-keterangan-domisili' class="button">Surat Keterangan Domisili</a>
-            <!-- <a href='/surat-keterangan-pengantar' class="button">Surat Keterangan Pengantar</a>
-            <a href='/surat-keterangan-ktp-dalam-proses' class="button">Surat Keterangan KTP Dalam Proses</a> -->
-        </div>
-        <div class="button-container">
             <a href='/surat-keterangan-pengantar' class="button">Surat Keterangan Pengantar</a>
-            <!-- <a href='/surat-keterangan-domisili' class="button">Surat Izin Keramaian</a>
-            <a href='/surat-keterangan-domisili' class="button">Surat Keterangan Tidak Mampu</a>
-            <a href='/surat-keterangan-domisili' class="button">Surat Keterangan Kematian</a> -->
+            <a href='/surat-keterangan-ktp-dalam-proses' class="button">Surat Keterangan KTP Dalam Proses</a>
         </div>
         <div class="button-container">
-            <a href='/surat-keterangan-ktp-dalam-proses' class="button">Surat Keterangan KTP Dalam Proses</a>
-            <!-- <a href='/surat-keterangan-domisili' class="button">Surat 7</a>
-            <a href='/surat-keterangan-domisili' class="button">Surat 8</a>
-            <a href='/surat-keterangan-domisili' class="button">Surat 9</a>
+            <a href='/surat-permohonan-kk' class="button">Surat Permohonan Kartu Keluarga</a>
+            <a href='/surat-permohonan-perubahan-kk' class="button">Surat Permohonan Perubahan Kartu Keluarga</a>
+            <!-- <a href='/surat-keterangan-domisili' class="button">Surat ke-x</a> -->
+        </div>
+        <div class="button-container">
+            <a href='/surat-keterangan-catatan-kriminal' class="button">Surat Keterangan Catatan Kriminal</a>
+            <a href='/surat-keterangan-wali-hakim' class="button">Surat Keterangan Wali Hakim</a>
+            <!-- <a href='/surat-keterangan-domisili' class="button">Surat ke-x</a>
             <a href="#" class="button">Surat Permohonan Perubahan</a>
             <a href="#" class="button">Surat Keterangan Domisili Usaha</a>
             <a href="#" class="button">Surat Keterangan Usaha</a> -->
@@ -117,16 +108,15 @@
             <a href='/surat-keterangan-domisili' class="button">Surat 11</a>
             <a href="#" class="button">Surat Keterangan Wali Hakim</a>
         </div> -->
-    </div>
+    </div> 
     <div class="footer">
         <!-- Tombol Navigasi -->
-        <div class="nav-buttons">
-            <a href='/warga' class="button">Halaman Utama</a>
-        </div>
+        <div class="nav-buttons"> 
+            <a href='/warga' class="button">Halaman Utama</a> 
+        </div> 
         <div class="credit">
             <p>&copy;</p>
         </div>
     </div>
 </body>
-
 </html>
