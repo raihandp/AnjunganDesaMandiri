@@ -1,74 +1,36 @@
 @extends('layout.warga.preview_surat')
 
-@section('title' , 'Surat Keterangan Domisili')
+@section('title' , 'Surat Keterangan Wali Hakim')
 @section('content')
-        <div>
-            <p>Yang bertanda tangan di bawah ini Kepala Desa .... , Kecamatan ... Kabupaten Bogor , Provinsi Jawa Barat
-                menerangkan dengan sebenarnya bahwa</p>
-            <table class="content">
-                <tr>
-                    <td>1.</td>
-                    <td>Nama Lengkap</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['nama_lengkap'] }}</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>NIK / No KTP</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['nik']}}</td>
-                </tr>
-                <tr>
-                    <td>3.</td>
-                    <td>Tempat/Tanggal Lahir</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['tempat_lahir'] }}, {{ $proses_surat['tanggal_lahir'] }}</td>
-                </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>Tempat Tinggal</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['alamat'] }}</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>Agama</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['agama'] }}</td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td>Jenis Kelamin</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['jenis_kelamin'] }}</td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>Pekerjaan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['pekerjaan'] }}</td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>Warga Negara</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['kewarganegaraan'] }}</td>
-                </tr>
-            </table>
-            <p>Yang namanya tersebut diatas memang benar warga kami yang akan menikah di KUA .Nama Kecatamana. Kabupaten
-                [nama kabupaten]. Berhubung orang tersebut tidak memiliki wali nasab, kami mohon dengan hormat Bapak
-                Kepala KUA [nama kecamatan] supaya berkenan menjadi wali </p>
-            <p>Demikian surat keterangan ini dibuat dengan sebenarnya untuk dapat dipergunakan sebagaimana mestinya</p>
-        </div>
-
-        <div class="footer">
-            <br><br>
-            <p>[nama_desa], [Tanggal Tandan tangan]</p>
-            <p>[Pendangatangan]</p>
-            <br><br><br>
-            <p>____________________</p>
-        </div>
+    <div>
+        <p>Yang bertanda tangan di bawah ini Kepala Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor, Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa :</p>
+        <table class="content">
+            <tr>
+                <td>1.</td>
+                <td>NIK / No KTP</td>
+                <td style="padding-left: 10px;">: </td>
+                <td>{{ $proses_surat['nik']}}</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Nama Lengkap</td>
+                <td style="padding-left: 10px;">: </td>
+                <td>{{ $proses_surat['nama_lengkap'] }}</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Tempat/Tanggal Lahir</td>
+                <td style="padding-left: 10px;">: </td>
+                <td>{{ $proses_surat['tempat_lahir'] }}, {{ $proses_surat['tanggal_lahir'] }}</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Tempat Tinggal</td>
+                <td style="padding-left: 10px;">: </td>
+                <td>{{ $proses_surat['alamat'] }} RT {{ $proses_surat['rt'] }} RW {{ $proses_surat['rw'] }} Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
+            </tr>
+        </table>
+        <p>Yang namanya tersebut di atas memang benar warga kami yang akan menikah di KUA Bojonggede Kabupaten Bogor. Berhubung orang tersebut tidak memiliki Wali Nasab, kami mohon dengan hormat Bapak Kepala KUA Bojonggede supaya berkenan menjadi Wali. </p>
+        <p>Demikian surat keterangan ini dibuat dengan sebenarnya untuk dapat dipergunakan sebagaimana mestinya. </p>
     </div>
-</body>
-
-</html>
+@endsection

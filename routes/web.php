@@ -75,12 +75,15 @@ Route::get('/skck', [PreviewSuratController::class, 'skck']);
 Route::get('/skktpdp', [PreviewSuratController::class, 'skktpdp']);
 Route::get('/spkk', [PreviewSuratController::class, 'spkk']);
 Route::get('/sppkk', [PreviewSuratController::class, 'sppkk']);
-Route::get('/skwh', [PreviewSuratController::class, 'skwh']);
 
 // Preview Surat Admin
 Route::get('/get-detail-skd/{id}', [PreviewSuratController::class, 'getDetailSkd'])->name('get-detail-skd');
 Route::get('/get-detail-skp/{id}', [PreviewSuratController::class, 'getDetailSkp'])->name('get-detail-skp');
 Route::get('/get-detail-skwh/{id}', [PreviewSuratController::class, 'getDetailSkwh'])->name('get-detail-skwh');
+Route::get('/get-detail-skck/{id}', [PreviewSuratController::class, 'getDetailSkck'])->name('get-detail-skck');
+Route::get('/get-detail-skktpdp/{id}', [PreviewSuratController::class, 'getDetailSkktpdp'])->name('get-detail-skktpdp');
+Route::get('/get-detail-spkk/{id}', [PreviewSuratController::class, 'getDetailSpkk'])->name('get-detail-spkk');
+Route::get('/get-detail-sppkk/{id}', [PreviewSuratController::class, 'getDetailSppkk'])->name('get-detail-sppkk');
 // Layanan Mandiri - Verifikasi Surat
 // Route::view('/verifikasi', 'warga.layanan-mandiri.verif_surat');
 // Route::view('/berhasil', 'warga.layanan-mandiri.berhasil');
