@@ -22,7 +22,7 @@
             @auth('warga')
                 <a href='/logout' class="button">Logout</a>
             @endauth
-            <a href="{{route('pilih-surat')}}" class="button">Layanan <br>Digital</a>
+            <a href="{{route('pilih-surat')}}" class="button">Persuratan <br>Digital</a>
             <!-- <a href='/pengumuman-warga' class="button">Pengumuman</a> -->
             <a href='/tentang-desa-rawapanjang' class="button">Tentang Desa <br>Rawapanjang</a>
             <!-- <a href='/agenda-rawapanjang' class="button">Agenda <br>Rawapanjang</a>
