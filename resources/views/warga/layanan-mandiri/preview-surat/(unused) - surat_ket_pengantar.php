@@ -34,7 +34,7 @@
             <table width="100%">
                 <tr>
                     <td width="25%">    
-                        <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png" alt="Logo Pemkab Bogor">
+                        <img src="{{asset('assets/logo.png')}}" alt="Logo Pemkab Bogor">
                     </td>
                     <td width="100%">            
                         <h1>PEMERINTAH KABUPATEN BOGOR

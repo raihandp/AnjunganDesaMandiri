@@ -236,13 +236,19 @@
         <div class="path">
             <h4>Layanan Surat > Dalam Proses >
                 @if ($surat->jenis_surat == 'SKD')
-                Surat Keterangan Domisili
+                    Surat Keterangan Domisili
                 @elseif ($surat->jenis_surat == 'SKP')
-                Surat Keterangan Pengantar
-                @elseif ($surat->jenis_surat == 'SKTM')
-                Surat Keterangan Tidak Mampu
+                    Surat Keterangan Pengantar
+                @elseif ($surat->jenis_surat == 'SKKTPDP')
+                    Surat Keterangan KTP Dalam Proses
+                @elseif ($surat->jenis_surat == "SPKK")
+                    Surat Permohonan Kartu Keluarga
+                @elseif ($surat->jenis_surat == 'SPPKK')
+                    Surat Permohonan Perubahan Kartu Keluarga
+                @elseif ($surat->jenis_surat == 'SKCK')
+                    Surat Keterangan Catatan Kriminal
                 @elseif ($surat->jenis_surat == "SKWH")
-                Surat Keterangan Wali Hakim
+                    Surat Keterangan Wali Hakim
                 @endif
             </h4>
         </div>
@@ -252,14 +258,20 @@
         <div class="content">
             <div class="mt-4">
                 <h3>
-                    @if($surat->jenis_surat == 'SKD')
-                    Surat Keterangan Domisili
-                    @elseif($surat->jenis_surat == 'SKP')
-                    Surat Keterangan Pengantar
-                    @elseif($surat->jenis_surat == 'SKTM')
-                    Surat Keterangan Tidak Mampu
-                    @elseif($surat->jenis_surat == "SKWH")
-                    Surat Keterangan Wali Hakim
+                    @if ($surat->jenis_surat == 'SKD')
+                        Surat Keterangan Domisili
+                    @elseif ($surat->jenis_surat == 'SKP')
+                        Surat Keterangan Pengantar
+                    @elseif ($surat->jenis_surat == 'SKKTPDP')
+                        Surat Keterangan KTP Dalam Proses
+                    @elseif ($surat->jenis_surat == "SPKK")
+                        Surat Permohonan Kartu Keluarga
+                    @elseif ($surat->jenis_surat == 'SPPKK')
+                        Surat Permohonan Perubahan Kartu Keluarga
+                    @elseif ($surat->jenis_surat == 'SKCK')
+                        Surat Keterangan Catatan Kriminal
+                    @elseif ($surat->jenis_surat == "SKWH")
+                        Surat Keterangan Wali Hakim
                     @endif
                 </h3>
                 <h3>{{$surat->warga->nama_lengkap}}</h3>
@@ -270,8 +282,14 @@
                 <iframe src="{{route('get-detail-skd' , $surat->id)}}" width="100%" height="100%"></iframe>
                 @elseif($surat->jenis_surat == 'SKP')
                 <iframe src="{{route('get-detail-skp' , $surat->id)}}" width="100%" height="100%"></iframe>
-                @elseif($surat->jenis_surat == 'SKTM')
-                <iframe src="{{route('get-detail-sktm' , $surat->id)}}" width="100%" height="100%"></iframe>
+                @elseif($surat->jenis_surat == 'SKKTPDP')
+                <iframe src="{{route('get-detail-skktpdp' , $surat->id)}}" width="100%" height="100%"></iframe>
+                @elseif($surat->jenis_surat == "SPKK")
+                <iframe src="{{route('get-detail-spkk' , $surat->id)}}" width="100%" height="100%"></iframe>
+                @elseif($surat->jenis_surat == 'SPPKK')
+                <iframe src="{{route('get-detail-sppkk' , $surat->id)}}" width="100%" height="100%"></iframe>
+                @elseif($surat->jenis_surat == 'SKCK')
+                <iframe src="{{route('get-detail-skck' , $surat->id)}}" width="100%" height="100%"></iframe>
                 @elseif($surat->jenis_surat == "SKWH")
                 <iframe src="{{route('get-detail-skwh' , $surat->id)}}" width="100%" height="100%"></iframe>
                 @endif

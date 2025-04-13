@@ -328,7 +328,7 @@
 
                     <div class="container-send-pesan">
                         <form action="{{route('kirimSurat' , $surat->id)}}" method="POST">
-                            <textarea rows="5" cols="120" class="template-pesan" name="pesan_wa" readonly>Hai saya dari desa cineam , surat yang anda anjukan sudah selesai di tanda tangan oleh kepala desa. Anda bisa mengprint surat melalui link berikut : {{asset('surat/'. $surat->file_surat . ".pdf")}}
+                            <textarea rows="5" cols="120" class="template-pesan" name="pesan_wa" readonly>Halo, kami dari Kantor Desa Rawapanjang ingin mengabarkan Anda bahwa surat yang Anda ajukan sudah selesai di tanda tangan oleh kepala desa. Anda dapat mengambil surat di kantor desa atau melihat surat di perangkat melalui link berikut : {{asset('surat/'. $surat->file_surat . ".pdf")}}
                             </textarea>
                             @csrf
                             <span>Kirim Pesan melalui : </span>
@@ -353,12 +353,29 @@
                 <div class="preview-container">
                     <iframe src="{{asset('surat/' . $surat->file_surat . ".pdf")}}" width="100%"
                         height="100%"></iframe>
+                        
+                    <!-- @if($surat->jenis_surat == 'SKD')
+                        <iframe src="{{route('get-detail-skd' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @elseif($surat->jenis_surat == 'SKP')
+                        <iframe src="{{route('get-detail-skp' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @elseif($surat->jenis_surat == 'SKKTPDP')
+                        <iframe src="{{route('get-detail-skktpdp' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @elseif($surat->jenis_surat == "SPKK")
+                        <iframe src="{{route('get-detail-spkk' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @elseif($surat->jenis_surat == 'SPPKK')
+                        <iframe src="{{route('get-detail-sppkk' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @elseif($surat->jenis_surat == 'SKCK')
+                        <iframe src="{{route('get-detail-skck' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @elseif($surat->jenis_surat == "SKWH")
+                        <iframe src="{{route('get-detail-skwh' , $surat->id)}}" width="100%" height="100%"></iframe>
+                    @endif -->
                 </div>
 
                 <div class="button-container">
                     <a href="{{route('layanan-surat-dalam-proses')}}" class="button">Kembali</a>
                     <a href="{{asset('surat/'. $surat->file_surat . " .pdf")}}" class="button" target="_blank">Cetak
                         Surat</a>
+                    <br><br>
                     @if($surat->is_print == 0)
                     <button id="handleShowPrintModal">Tandai sudah di Cetak</button>
                     @else

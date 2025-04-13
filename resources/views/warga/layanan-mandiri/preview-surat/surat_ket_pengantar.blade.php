@@ -31,9 +31,7 @@
         }
 
         .footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            text-align: right;
         }
     </style>
 </head>
@@ -43,8 +41,7 @@
         <table width="100%">
             <tr>
                 <td width="25%">
-                    <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png"
-                        alt="Logo Pemkab Bogor">
+                    <img src="{{asset('assets/logo.png')}}" alt="Logo Pemkab Bogor" width="100">
                 </td>
                 <td width="100%">
                     <h1>PEMERINTAH KABUPATEN BOGOR
@@ -70,105 +67,36 @@
             <br>
         </div>
         <div>
-            <p>Yang bertanda tangan di bawah ini Kepala Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor,
-                Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa :</p>
+            <p>Yang bertanda tangan di bawah ini:</p>
             <table class="content">
                 <tr>
-                    <td>1.</td>
                     <td>NIK / No KTP</td>
                     <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['nik']}}</td>
+                    <td>{{ $proses_surat['nik'] }}</td>
                 </tr>
                 <tr>
-                    <td>2.</td>
                     <td>Nama Lengkap</td>
                     <td style="padding-left: 10px;">: </td>
                     <td>{{ $proses_surat['nama_lengkap'] }}</td>
                 </tr>
                 <tr>
-                    <td>3.</td>
                     <td>Tempat/Tanggal Lahir</td>
                     <td style="padding-left: 10px;">: </td>
                     <td>{{ $proses_surat['tempat_lahir'] }}, {{ $proses_surat['tanggal_lahir'] }}</td>
                 </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>Umur</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['usia'] }}</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>Warga Negara</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['warga_negara'] }}</td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td>Agama</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['agama'] }}</td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>Jenis Kelamin</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['jenis_kelamin'] }}</td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>Pekerjaan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['pekerjaan'] }}</td>
-                </tr>
-                <tr>
-                    <td>9.</td>
-                    <td>Tempat Tinggal</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['alamat'] }} RT {{ $proses_surat['rt'] }} RW {{ $proses_surat['rw'] }} Desa
-                        {{$proses_surat['desa']}} , Kecamatan {{$proses_surat['kecamatan']}}, Kabupaten Bogor</td>
-                </tr>
-                <tr>
-                    <td>10.</td>
-                    <td>Surat bukti diri KTP</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['nik'] }}</td>
-                </tr>
-                <tr>
-                    <td>11.</td>
-                    <td>Keperluan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['keperluan'] }}</td>
-                </tr>
-                <tr>
-                    <td>12.</td>
-                    <td>Berlaku</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>1 Januari 2025 s/d 31 April 2025</td>
-                </tr>
-                <tr>
-                    <td>13.</td>
-                    <td>Golongan Darah</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['gol_darah'] }}</td>
-                </tr>
             </table>
-            <p>Demikian surat keterangan ini dibuat, untuk dipergunakan sebagaimana mestinya.</p>
+            <p>Orang tersebut di atas adalah benar-benar warga kami yang bertempat tinggal di {{
+                $proses_surat['alamat'] }} RT {{ $proses_surat['rt'] }} RW {{ $proses_surat['rw'] }} Desa
+                Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor.</p>
+            <p>Surat Keterangan ini dibuat untuk keperluan: {{ $proses_surat['keperluan'] }}</p>
+            <p>Demikian surat keterangan ini dibuat dengan sebenarnya.</p>
         </div>
 
         <div class="footer">
-            <div>
-                <br>
-                <p>Pemegang Surat</p>
-                <br><br><br>
-                <span>{{$proses->surat['nama_lengkap']}}</span>
-            </div>
-            <div><br><br>
-                <p>Rawapanjang, Tanggal</p>
-                <br><br><br>
-                <p>Pejabata Desa</p>
-                <p>____________________</p>
-            </div>
+            <br><br>
+            <p>Rawapanjang, {{$surat->updated_at ?? ""}}</p>
+            <br><br><br>
+            <p>____________________</p>
         </div>
     </div>
 </body>

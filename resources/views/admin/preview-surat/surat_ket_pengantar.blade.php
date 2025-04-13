@@ -30,11 +30,9 @@
             text-align: justify;
         }
 
-        /* .footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        } */
+        .footer {
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -43,8 +41,7 @@
         <table width="100%">
             <tr>
                 <td width="25%">
-                    <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png"
-                        alt="Logo Pemkab Bogor">
+                    <img src="{{asset('assets/logo.png')}}" alt="Logo Pemkab Bogor" width="100">
                 </td>
                 <td width="100%">
                     <h1>PEMERINTAH KABUPATEN BOGOR
@@ -70,10 +67,9 @@
             <br>
         </div>
         <div>
-            <p>Yang bertanda tangan di bawah ini Kepala Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor,
-                Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa :</p>
-           <table class="content">
-                <tr>
+            <p>Yang bertanda tangan di bawah ini:</p>
+            <table class="content">
+            <tr>
                     <td>1.</td>
                     <td>NIK / No KTP</td>
                     <td style="padding-left: 10px;">: </td>
@@ -91,102 +87,19 @@
                     <td style="padding-left: 10px;">: </td>
                     <td>{{ $surat->isi_surat['tempat_lahir'] }}, {{ $surat->isi_surat['tanggal_lahir'] }}</td>
                 </tr>
-                <tr>
-                    <td>4.</td>
-                    <td>Umur</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['usia'] }}</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>Warga Negara</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['warga_negara'] }}</td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td>Agama</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['agama'] }}</td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>Jenis Kelamin</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['jenis_kelamin'] }}</td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>Pekerjaan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['pekerjaan'] }}</td>
-                </tr>
-                <tr>
-                    <td>9.</td>
-                    <td>Tempat Tinggal</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['alamat'] }} RT {{ $surat->isi_surat['rt'] }} RW {{ $surat->isi_surat['rw'] }} Desa
-                        {{ $surat->isi_surat['desa'] }}, Kecamatan {{ $surat->isi_surat['kecamatan'] }}, Kabupaten Bogor</td>
-                </tr>
-                <tr>
-                    <td>10.</td>
-                    <td>Surat bukti diri KTP</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['nik'] }}</td>
-                </tr>
-                <tr>
-                    <td>11.</td>
-                    <td>Keperluan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['keperluan'] }}</td>
-                </tr>
-                <tr>
-                    <td>12.</td>
-                    <td>Berlaku</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>1 Januari 2025 s/d 31 April 2025</td>
-                </tr>
-                <tr>
-                    <td>13.</td>
-                    <td>Golongan Darah</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['gol_darah'] }}</td>
-                </tr>
             </table>
-            <p>Demikian surat keterangan ini dibuat, untuk dipergunakan sebagaimana mestinya.</p>
+            <p>Orang tersebut di atas adalah benar-benar warga kami yang bertempat tinggal di {{
+                $surat->isi_surat['alamat'] }} RT {{ $surat->isi_surat['rt'] }} RW {{ $surat->isi_surat['rw'] }} Desa
+                Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor.</p>
+            <p>Surat Keterangan ini dibuat untuk keperluan: {{ $surat->isi_surat['keperluan'] }}</p>
+            <p>Demikian surat keterangan ini dibuat dengan sebenarnya.</p>
         </div>
 
-        {{-- <div class="footer">
-            <div>
-                <br>
-                <p>Pemegang Surat</p>
-                <br><br><br>
-                <span>{{$surat->isi_surat['nama_lengkap']}}</span>
-            </div>
-            <div><br><br>
-                <p>Rawapanjang, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
-                <br><br><br>
-                <p style="align-items: flex-start">Pejabat Desa</p>
-            </div>
-        </div> --}}
         <div class="footer">
-            <table>
-                <tr>
-                    <td>
-                        <p>Pemegang Surat</p>
-                        <br><br><br><br><br><br><br>
-                        <span>{{$surat->isi_surat['nama_lengkap']}}</span>
-                    </td>
-                    <td >
-                        <div style="width: 400px"></div>
-                    </td>
-                    <td>
-                        <p>Rawapanjang, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
-                        <br><br><br><br><br><br><br>
-                        <p style="align-items: flex-start">Pejabat Desa</p>
-                    </td>
-                </tr>
-            </table>
+            <br><br>
+            <p>Rawapanjang, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
+            <br><br><br>
+            <p>____________________</p>
         </div>
     </div>
 </body>
