@@ -328,7 +328,7 @@
 
                     <div class="container-send-pesan">
                         <form action="{{route('kirimSurat' , $surat->id)}}" method="POST">
-                            <textarea rows="5" cols="120" class="template-pesan" name="pesan_wa" readonly>Halo, kami dari Kantor Desa Rawapanjang ingin mengabarkan Anda bahwa surat yang Anda ajukan sudah selesai di tanda tangan oleh kepala desa. Anda dapat mengambil surat di kantor desa atau melihat surat di perangkat melalui link berikut : {{asset('surat/'. $surat->file_surat . ".pdf")}}
+                            <textarea rows="5" cols="120" class="template-pesan" name="pesan_wa" readonly>Halo, kami dari Kantor Desa Rawapanjang ingin mengabarkan bahwa surat yang Anda ajukan sudah selesai diproses. Silahkan ambil surat Anda di kantor desa, atau Anda juga dapat melihat surat ini di gawai Anda melalui tautan berikut : {{asset('surat/'. $surat->file_surat . ".pdf")}}
                             </textarea>
                             @csrf
                             <span>Kirim Pesan melalui : </span>
