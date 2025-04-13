@@ -45,7 +45,37 @@ class SuratController extends Controller
         return view('warga.layanan-mandiri.form-surat.form-surat-keterangan-ktp-dalam-proses', ['warga' => $warga]);
     }
 
-    public function form_surat_keterangan_wali_hakim(Request $request)
+    public function form_Surat_Permohonan_KK(Request $request)
+    {
+        // Data warga diambil dari session
+        $warga = auth()->guard('warga')->user();
+        if (!$warga) {
+            return redirect()->route('login');
+        }
+        return view('warga.layanan-mandiri.form-surat.form-surat-permohonan-kk', ['warga' => $warga]);
+    }
+
+    public function form_Surat_Permohonan_Perubahan_KK(Request $request)
+    {
+        // Data warga diambil dari session
+        $warga = auth()->guard('warga')->user();
+        if (!$warga) {
+            return redirect()->route('login');
+        }
+        return view('warga.layanan-mandiri.form-surat.form-surat-permohonan-perubahan-kk', ['warga' => $warga]);
+    }
+
+    public function form_Surat_Keterangan_Catatan_Kriminal(Request $request)
+    {
+        // Data warga diambil dari session
+        $warga = auth()->guard('warga')->user();
+        if (!$warga) {
+            return redirect()->route('login');
+        }
+        return view('warga.layanan-mandiri.form-surat.form-surat-ket-catatan-kriminal', ['warga' => $warga]);
+    }
+
+    public function form_Surat_Keterangan_Wali_Hakim(Request $request)
     {
         // Data warga diambil dari session
         $warga = auth()->guard('warga')->user();

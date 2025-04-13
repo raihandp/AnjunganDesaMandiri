@@ -56,7 +56,10 @@ Route::controller(SuratController::class)->group(function () {
     Route::get('/surat-keterangan-domisili', 'form_Surat_Keterangan_Domisili');
     Route::get('/surat-keterangan-pengantar', 'form_Surat_Keterangan_Pengantar');
     Route::get('/surat-keterangan-ktp-dalam-proses', 'form_Surat_Keterangan_KTP_Dalam_Proses');
-    Route::get('/surat-keterangan-wali-hakim', 'form_surat_keterangan_wali_hakim');
+    Route::get('/surat-permohonan-kk', 'form_Surat_Permohonan_KK');
+    Route::get('/surat-permohonan-perubahan-kk', 'form_Surat_Permohonan_Perubahan_KK');
+    Route::get('/surat-keterangan-catatan-kriminal', 'form_Surat_Keterangan_Catatan_Kriminal');
+    Route::get('/surat-keterangan-wali-hakim', 'form_Surat_Keterangan_Wali_Hakim');
     Route::post('/submitForm', 'submitForm')->name('submitForm');
     Route::get('/konfirmasi', 'konfirmasi');
     // Route::post('/submitSurat', [SuratController::class, 'submitSurat']);
