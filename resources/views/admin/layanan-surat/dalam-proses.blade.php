@@ -75,7 +75,7 @@
                     <td>{{$surat->jenis_surat}}</td>
                     <td>{{date($surat->created_at)}}</td>
                     @empty
-                    <td colspan="7" style="text-align: center">Surat Sudah di Tanda tanga semua oleh Kades</td>
+                    <td colspan="7" style="text-align: center">Surat sudah divalidasi semua oleh Kepala Desa</td>
                 </tr>
                 @endforelse
                 <tr>
@@ -114,7 +114,7 @@
                     <td>{{$surat->jenis_surat}}</td>
                     <td>{{date($surat->created_at)}}</td>
                     @empty
-                    <td colspan="7" style="text-align: center">Surat Sudah di kirim ke warga</td>
+                    <td colspan="7" style="text-align: center">Surat sudah di kirim ke warga</td>
                 </tr>
                 @endforelse
                 <tr>
