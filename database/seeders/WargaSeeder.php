@@ -19,7 +19,7 @@ class WargaSeeder extends Seeder
             [
                 'nik' => '1234567890123456',
                 'pin' => Hash::make('123456'), // Enkripsi PIN untuk keamanan
-                'nama_lengkap' => 'John Doe',
+                'nama_lengkap' => 'Jaka Tarub',
                 'tempat_lahir' => 'Jakarta',
                 'tanggal_lahir' => '1990-01-01',
                 'alamat' => 'Jl. Kebun Raya No. 1',

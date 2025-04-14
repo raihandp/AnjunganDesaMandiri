@@ -49,7 +49,7 @@ class PreviewSuratController extends Controller
 
     public function skck()
     {
-        $proses_surat = ProsesSurat::all();
+        $proses_surat = session('surat');
 
         return view('warga.layanan-mandiri.preview-surat.surat_ket_catatan_kriminal', ['proses_surat' => $proses_surat]);
     }
@@ -62,7 +62,7 @@ class PreviewSuratController extends Controller
 
     public function skktpdp()
     {
-        $proses_surat = ProsesSurat::all();
+        $proses_surat = session('surat');
 
         return view('warga.layanan-mandiri.preview-surat.surat_ket_ktp_dlm_proses', ['proses_surat' => $proses_surat]);
     }
@@ -75,7 +75,7 @@ class PreviewSuratController extends Controller
 
     public function spkk()
     {
-        $proses_surat = ProsesSurat::all();
+        $proses_surat = session('surat');
 
         return view('warga.layanan-mandiri.preview-surat.surat_permohonan_kk', ['proses_surat' => $proses_surat]);
     }
@@ -88,7 +88,7 @@ class PreviewSuratController extends Controller
 
     public function sppkk()
     {
-        $proses_surat = ProsesSurat::all();
+        $proses_surat = session('surat');
 
         return view('warga.layanan-mandiri.preview-surat.surat_permohonan_perubahan_kk', ['proses_surat' => $proses_surat]);
     }
