@@ -87,23 +87,23 @@
                 <tr>
                     <!-- <td>2.</td> -->
                     <td>Nama Lengkap</td>
-                    <td class="titik-dua">: </td>
+                    <td>: </td>
                     <td>{{ $surat->isi_surat['nama_lengkap'] }}</td>
                 </tr>
                 <tr>
                     <!-- <td>3.</td> -->
                     <td>Tempat/Tanggal Lahir</td>
-                    <td class="titik-dua">: </td>
+                    <td>: </td>
                     <td>{{ $surat->isi_surat['tempat_lahir'] }}, {{ $surat->isi_surat['tanggal_lahir'] }}</td>
                 </tr>
                 <tr>
                     <td>Tempat Tinggal</td>
-                    <td class="titik-dua">: </td>
+                    <td>: </td>
                     <td>{{ $surat->isi_surat['alamat'] }} RT {{ $surat->isi_surat['rt'] }} RW {{ $surat->isi_surat['rw'] }} Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
                 </tr>
                 <tr>
                     <td>Keperluan</td>
-                    <td class="titik-dua">: </td>
+                    <td>: </td>
                     <td>{{ $surat->isi_surat['keperluan'] }}</td>
                 </tr>
             </table>
