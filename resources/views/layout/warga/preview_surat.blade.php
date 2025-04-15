@@ -76,6 +76,9 @@
             <p>Rawapanjang, {{$surat->updated_at ?? ""}}</p>
             <br><br><br>
             <p>____________________</p>
+            <br><br>
+            <br><br>
+            <br><br>
         </div>
     </div>
 </body>

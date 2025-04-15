@@ -37,27 +37,19 @@
 </head>
 
 <body>
-    <div class="heading">
+    <div class="header">
         <table width="100%">
             <tr>
                 <td width="25%">
-                    {{-- <img src="{{asset('assets/logo.png')}}" width="140px" height="auto" alt="Logo Pemkab Bogor">
-                    --}}
-                    {{-- {{
-                    $logoPath = asset('assets/logo.png'); $image = "data:image/png;base64," .
-                    base64_encode(file_get_contents($imagePath));
-                    }} --}}
-                    <img src="{{asset('assets/logo.png')}}" width="120px" height="120px" alt="Logo Pemkab Bogor">
+                    <img src="{{asset('assets/logo.png')}}" alt="Logo Pemkab Bogor" width="100">
                 </td>
-                <td width="50%" style="text-align: center ;">
+                <td width="100%">
                     <h1>PEMERINTAH KABUPATEN BOGOR
                         <br>KECAMATAN BOJONGGEDE
                         <br>DESA RAWAPANJANG
                     </h1>
                     <p style="margin-top:-10px; margin-bottom:0px;">Jl. Talang Kp Kelapa RT.02 RW.15 No.02 Kode Pos
                         16920</p>
-                </td>
-                <td width="25%">
                 </td>
             </tr>
             <tr>
@@ -101,11 +93,14 @@
         </div>
 
         <div class="footer">
+            <br><br>
             <p>Rawapanjang, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
-            {{-- <img src="{{asset('assets/ttd_kades.png')}}" height="116px" width="116px" alt="ttd_desa" /> --}}
-            <br>
+            <img src="{{asset('assets/ttd_kades.png')}}" height="116px" width="116px" alt="ttd_desa" />
             <br>
             <p style="align-items: flex-start">Pejabat Desa</p>
+            <br><br>
+            <br><br>
+            <br><br>
         </div>
     </div>
 </body>

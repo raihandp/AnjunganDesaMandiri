@@ -70,19 +70,19 @@
             <p>Yang bertanda tangan di bawah ini:</p>
             <table class="content">
             <tr>
-                    <td>1.</td>
+                    <!-- <td>1.</td> -->
                     <td>NIK / No KTP</td>
                     <td style="padding-left: 10px;">: </td>
                     <td>{{ $surat->isi_surat['nik'] }}</td>
                 </tr>
                 <tr>
-                    <td>2.</td>
+                    <!-- <td>2.</td> -->
                     <td>Nama Lengkap</td>
                     <td style="padding-left: 10px;">: </td>
                     <td>{{ $surat->isi_surat['nama_lengkap'] }}</td>
                 </tr>
                 <tr>
-                    <td>3.</td>
+                    <!-- <td>3.</td> -->
                     <td>Tempat/Tanggal Lahir</td>
                     <td style="padding-left: 10px;">: </td>
                     <td>{{ $surat->isi_surat['tempat_lahir'] }}, {{ $surat->isi_surat['tanggal_lahir'] }}</td>
