@@ -85,12 +85,12 @@
                 </tr>
                 <tr>
                     <td>Nama Lengkap</td>
-                    <td>: </td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['nama_lengkap'] }}</td>
                 </tr>
                 <tr>
                     <td>Tempat/Tanggal Lahir</td>
-                    <td>: </td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['tempat_lahir'] }}, {{ $surat->isi_surat['tanggal_lahir'] }}</td>
                 </tr>
             </table>
