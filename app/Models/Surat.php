@@ -50,8 +50,10 @@ class Surat extends Model
         $kodeJenis = [
             'SKD' => 'SKD',
             'SKP' => 'SKP',
-            'SKN' => 'SKN',
-            'SKTM' => 'SKTM',
+            'SKKTPDP' => 'SKKTPDP',
+            'SPKK' => 'SPKK',
+            'SPPKK' => 'SPPKK',
+            'SKCK' => 'SKCK',
             'SKWH' => 'SKWH',
         ][$this->jenis_surat] ?? 'UNK';
 
