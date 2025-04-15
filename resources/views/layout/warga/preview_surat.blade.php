@@ -17,7 +17,7 @@
             font-weight: normal;
         }
 
-        p {
+        p, table {
             line-height: 1.5;
         }
 
@@ -29,6 +29,15 @@
             margin-left: 50px;
             margin-right: 50px;
             text-align: justify;
+        }
+
+        .head-table {
+            width: 150px;
+        }
+
+        .titik-dua {
+            padding-left: 10px;
+            padding-right: 5px;
         }
 
         .footer {

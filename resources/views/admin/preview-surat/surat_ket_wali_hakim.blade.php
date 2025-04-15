@@ -65,7 +65,7 @@
 
     <div class="content">
         <div class="header">
-            <h2>Surat Keterangan Pengantar</h2>
+            <h2>Surat Keterangan Wali Hakim</h2>
             <p style="margin-top:-10px;">Nomor: {{$surat->no_surat}}</p>
             <br>
         </div>
@@ -132,8 +132,12 @@
                 <tr>
                     <td style="text-align: right">
                         <p>Nama Desa, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
-                        <br><br><br><br><br><br><br>
-                        <p style="align-items: flex-start">Pejabat Desa</p>
+                        <img src="{{asset('assets/ttd_kades.png')}}" height="116px" width="116px" alt="ttd_desa" />
+                        <br>
+                        <!-- <p style="align-items: flex-start">Pejabat Desa</p> -->
+                        <br><br>
+                        <br><br>
+                        <br><br>
                     </td>
                 </tr>
             </table>
