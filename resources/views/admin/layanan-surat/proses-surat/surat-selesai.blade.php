@@ -351,10 +351,10 @@
             </div>
             <div class="content-2">
                 <div class="preview-container">
-                    <iframe src="{{asset('surat/' . $surat->file_surat . ".pdf")}}" width="100%"
-                        height="100%"></iframe>
+                    <!-- <iframe src="{{asset('surat/' . $surat->file_surat . ".pdf")}}" width="100%"
+                        height="100%"></iframe> -->
                         
-                    <!-- @if($surat->jenis_surat == 'SKD')
+                    @if($surat->jenis_surat == 'SKD')
                         <iframe src="{{route('get-detail-skd' , $surat->id)}}" width="100%" height="100%"></iframe>
                     @elseif($surat->jenis_surat == 'SKP')
                         <iframe src="{{route('get-detail-skp' , $surat->id)}}" width="100%" height="100%"></iframe>
@@ -368,7 +368,7 @@
                         <iframe src="{{route('get-detail-skck' , $surat->id)}}" width="100%" height="100%"></iframe>
                     @elseif($surat->jenis_surat == "SKWH")
                         <iframe src="{{route('get-detail-skwh' , $surat->id)}}" width="100%" height="100%"></iframe>
-                    @endif -->
+                    @endif
                 </div>
 
                 <div class="button-container">

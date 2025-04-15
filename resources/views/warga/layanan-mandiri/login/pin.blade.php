@@ -149,12 +149,12 @@
                     <form action="{{route('login.checkPin')}}" method="POST">
                         @csrf
                         <input hidden name="nik" value="{{$nik}}" />
-                        <input type="number" name="pin1" class="pin"/>
-                        <input type="number" name="pin2" class="pin"/>
-                        <input type="number" name="pin3" class="pin"/>
-                        <input type="number" name="pin4" class="pin"/>
-                        <input type="number" name="pin5" class="pin"/>
-                        <input type="number" name="pin6" class="pin"/>
+                        <input type="password" name="pin1" class="pin"/>
+                        <input type="password" name="pin2" class="pin"/>
+                        <input type="password" name="pin3" class="pin"/>
+                        <input type="password" name="pin4" class="pin"/>
+                        <input type="password" name="pin5" class="pin"/>
+                        <input type="password" name="pin6" class="pin"/>
                         <input type="hidden" name="pin" id="pin" />
                         @if(session('error'))
                         <p style="color: red;">{{session('error')}}</p>

@@ -16,7 +16,7 @@
             <th>Alamat</th>
             <th>RT/RW</th>
             <th>Kewarganegaraan</th>
-            <th>Aksi</th>
+            <!-- <th>Aksi</th> -->
         </tr>
     </thead>
     <tbody>
@@ -33,14 +33,14 @@
             <td>{{ $warga->alamat }}</td>
             <td>{{ $warga->rt . "/" . $warga->rw }}</td>
             <td>{{ $warga->kewarganegaraan ?? "WNI" }}</td>
-            <td>
+            <!-- <td>
                 <a href="#">Edit</a>
                 <form action="#" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit">Hapus</button>
                 </form>
-            </td>
+            </td> -->
         </tr>
         @endforeach
     </tbody>
