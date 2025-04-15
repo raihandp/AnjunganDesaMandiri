@@ -97,7 +97,7 @@
             <p>Rawapanjang, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
             <img src="{{asset('assets/ttd_kades.png')}}" height="116px" width="116px" alt="ttd_desa" />
             <br>
-            <p style="align-items: flex-start">Pejabat Desa</p>
+            <!-- <p style="align-items: flex-start">Pejabat Desa</p> -->
             <br><br>
             <br><br>
             <br><br>
