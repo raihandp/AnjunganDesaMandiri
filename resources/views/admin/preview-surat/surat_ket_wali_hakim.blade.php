@@ -16,7 +16,7 @@
             font-weight: normal;
         }
 
-        p {
+        p, table {
             line-height: 1.5;
         }
 
@@ -30,11 +30,18 @@
             text-align: justify;
         }
 
-        /* .footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        } */
+        .head-table {
+            width: 150px;
+        }
+
+        .titik-dua {
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+
+        .footer {
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -43,8 +50,7 @@
         <table width="100%">
             <tr>
                 <td width="25%">
-                    <img src="https://rawapanjang-desa.id/desa/logo/1679693855_logo-pemkab-bogor.png"
-                        alt="Logo Pemkab Bogor">
+                    <img src="{{asset('assets/logo.png')}}" alt="Logo Pemkab Bogor" width="100">
                 </td>
                 <td width="100%">
                     <h1>PEMERINTAH KABUPATEN BOGOR
@@ -74,64 +80,34 @@
                 Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa :</p>
             <table class="content">
                 <tr>
-                    <td>1.</td>
-                    <td>Nama Lengkap</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['nik'] }}</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>NIK / No KTP</td>
-                    <td style="padding-left: 10px;">: </td>
+                    <td class="head-table">NIK / No KTP</td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['nik']}}</td>
                 </tr>
                 <tr>
-                    <td>3.</td>
-                    <td>Tempat/Tanggal Lahir</td>
-                    <td style="padding-left: 10px;">: </td>
+                    <td class="head-table">Nama Lengkap</td>
+                    <td class="titik-dua">: </td>
+                    <td>{{ $surat->isi_surat['nama_lengkap'] }}</td>
+                </tr>
+                <tr>
+                    <td class="head-table">Tempat/Tanggal Lahir</td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['tempat_lahir'] }}, {{ $surat->isi_surat['tanggal_lahir'] }}</td>
                 </tr>
                 <tr>
-                    <td>4.</td>
-                    <td>Tempat Tinggal</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['alamat'] }}</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>Agama</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['agama'] }}</td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td>Jenis Kelamin</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['jenis_kelamin'] }}</td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>Pekerjaan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['pekerjaan'] }}</td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>Warga Negara</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $surat->isi_surat['kewarganegaraan'] }}</td>
-                </tr>
+                    <td class="head-table">Tempat Tinggal</td>
+                    <td class="titik-dua">: </td>
+                    <td>{{ $surat->isi_surat['alamat'] }} RT {{ $surat->isi_surat['rt'] }} RW {{ $surat->isi_surat['rw'] }} Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
+                    </tr>
             </table>
-            Yang namanya tersebut diatas memang benar warga kami yang akan menikah di KUA .Nama Kecatamana. Kabupaten
-            [nama kabupaten]. Berhubung orang tersebut tidak memiliki wali nasab, kami mohon dengan hormat Bapak
-            Kepala KUA [nama kecamatan] supaya berkenan menjadi wali </p>
-            <p>Demikian surat keterangan ini dibuat dengan sebenarnya untuk dapat dipergunakan sebagaimana mestinya</p>
+            <p>Yang namanya tersebut di atas memang benar warga kami yang akan menikah di KUA Bojonggede Kabupaten Bogor. Berhubung orang tersebut tidak memiliki Wali Nasab, kami mohon dengan hormat Bapak Kepala KUA Bojonggede supaya berkenan menjadi Wali. </p>
+            <p>Demikian surat keterangan ini dibuat dengan sebenarnya untuk dapat dipergunakan sebagaimana mestinya.</p>
         </div>
         <div class="footer">
             <table width="100%">
                 <tr>
                     <td style="text-align: right">
-                        <p>Nama Desa, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
+                        <p>Rawapanjang, {{$surat->updated_at->translatedFormat('d F Y') ?? ""}}</p>
                         <img src="{{asset('assets/ttd_kades.png')}}" height="116px" width="116px" alt="ttd_desa" />
                         <br>
                         <!-- <p style="align-items: flex-start">Pejabat Desa</p> -->

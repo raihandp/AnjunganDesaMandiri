@@ -6,7 +6,6 @@
         <p>Yang bertanda tangan di bawah ini Kepala Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor, Provinsi Jawa Barat menerangkan dengan sebenarnya bahwa :</p>
         <table class="content">
             <tr>
-                <!-- <td>1.</td> -->
                 <td class="head-table">NIK / No KTP</td>
                 <td class="titik-dua">: </td>
                 <td>{{ $proses_surat['nik']}}</td>
