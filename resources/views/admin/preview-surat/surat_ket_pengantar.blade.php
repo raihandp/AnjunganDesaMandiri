@@ -16,7 +16,7 @@
             font-weight: normal;
         }
 
-        p {
+        p, table {
             line-height: 1.5;
         }
 
@@ -28,6 +28,15 @@
             margin-left: 50px;
             margin-right: 50px;
             text-align: justify;
+        }
+
+        .head-table {
+            width: 150px;
+        }
+
+        .titik-dua {
+            padding-left: 10px;
+            padding-right: 5px;
         }
 
         .footer {
@@ -71,31 +80,31 @@
             <table class="content">
             <tr>
                     <!-- <td>1.</td> -->
-                    <td>NIK / No KTP</td>
-                    <td style="padding-left: 10px;">: </td>
+                    <td class="head-table">NIK / No KTP</td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['nik'] }}</td>
                 </tr>
                 <tr>
                     <!-- <td>2.</td> -->
                     <td>Nama Lengkap</td>
-                    <td style="padding-left: 10px;">: </td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['nama_lengkap'] }}</td>
                 </tr>
                 <tr>
                     <!-- <td>3.</td> -->
                     <td>Tempat/Tanggal Lahir</td>
-                    <td style="padding-left: 10px;">: </td>
+                    <td class="titik-dua">: </td>
                     <td>{{ $surat->isi_surat['tempat_lahir'] }}, {{ $surat->isi_surat['tanggal_lahir'] }}</td>
                 </tr>
                 <tr>
                     <td>Tempat Tinggal</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['alamat'] }} RT {{ $proses_surat['rt'] }} RW {{ $proses_surat['rw'] }} Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
+                    <td class="titik-dua">: </td>
+                    <td>{{ $surat->isi_surat['alamat'] }} RT {{ $surat->isi_surat['rt'] }} RW {{ $surat->isi_surat['rw'] }} Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
                 </tr>
                 <tr>
                     <td>Keperluan</td>
-                    <td style="padding-left: 10px;">: </td>
-                    <td>{{ $proses_surat['keperluan'] }}</td>
+                    <td class="titik-dua">: </td>
+                    <td>{{ $surat->isi_surat['keperluan'] }}</td>
                 </tr>
             </table>
             <p>Demikian surat keterangan ini dibuat, untuk dipergunakan sebagaimana mestinya.</p>
