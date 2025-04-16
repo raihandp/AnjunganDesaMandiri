@@ -52,6 +52,10 @@
 </nav>
 
 <div class="pagination-info">
-    Menampilkan {{ $paginator->firstItem() }} hingga {{ $paginator->lastItem() }} dari {{ $paginator->total() }} data
+    @if ($paginator->total() > 0)
+        Menampilkan {{ $paginator->firstItem() }} hingga {{ $paginator->lastItem() }} dari {{ $paginator->total() }} data
+    @else
+        Menampilkan 0 dari {{ $paginator->total() }} data
+    @endif
 </div>
 @endif
