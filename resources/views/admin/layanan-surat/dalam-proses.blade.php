@@ -123,7 +123,6 @@
                     </td>
                 </tr>
             </tbody>
-            {{$belumDikirimKeWarga->links()}}
         </table>
     </div>
 </div>
