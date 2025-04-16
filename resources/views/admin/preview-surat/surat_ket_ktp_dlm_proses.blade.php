@@ -31,7 +31,7 @@
         }
 
         .head-table {
-            width: 150px;
+            width: 160px;
         }
 
         .titik-dua {

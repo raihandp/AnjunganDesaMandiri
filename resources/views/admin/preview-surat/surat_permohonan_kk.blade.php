@@ -94,7 +94,7 @@
                     <td>{{ $surat->isi_surat['alamat'] }} RT {{ $surat->isi_surat['rt'] }} RW {{ $surat->isi_surat['rw'] }} Desa Rawapanjang, Kecamatan Bojonggede, Kabupaten Bogor</td>
                 </tr>
                 <tr>
-                    <td><br></td>
+                    <td colspan="3"><hr></td>
                 </tr>
                 <tr>
                     <td>Surat Bukti Diri</td>
@@ -105,7 +105,7 @@
                     <td>{{ $surat->isi_surat['nik'] }}</td>
                 </tr>
                 <tr>
-                    <td><br></td>
+                    <td colspan="3"><hr></td>
                 </tr>
                 <tr>
                     <td class="head-table">Keperluan</td>

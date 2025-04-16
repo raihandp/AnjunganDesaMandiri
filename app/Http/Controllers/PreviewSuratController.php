@@ -57,7 +57,7 @@ class PreviewSuratController extends Controller
     public function getDetailSkck($id)
     {
         $surat = Surat::find($id);
-        // return view('admin.preview-surat.surat_ket_wali_hakim', ['surat' => $surat]);
+        return view('admin.preview-surat.surat_ket_catatan_kriminal', ['surat' => $surat]);
     }
 
     public function skktpdp()
@@ -70,7 +70,7 @@ class PreviewSuratController extends Controller
     public function getDetailSkktpdp($id)
     {
         $surat = Surat::find($id);
-        // return view('admin.preview-surat.surat_ket_wali_hakim', ['surat' => $surat]);
+        return view('admin.preview-surat.surat_ket_ktp_dlm_proses', ['surat' => $surat]);
     }
 
     public function spkk()
@@ -83,7 +83,7 @@ class PreviewSuratController extends Controller
     public function getDetailSpkk($id)
     {
         $surat = Surat::find($id);
-        // return view('admin.preview-surat.surat_ket_wali_hakim', ['surat' => $surat]);
+        return view('admin.preview-surat.surat_permohonan_kk', ['surat' => $surat]);
     }
 
     public function sppkk()
@@ -96,6 +96,6 @@ class PreviewSuratController extends Controller
     public function getDetailSppkk($id)
     {
         $surat = Surat::find($id);
-        // return view('admin.preview-surat.surat_ket_wali_hakim', ['surat' => $surat]);
+        return view('admin.preview-surat.surat_permohonan_perubahan_kk', ['surat' => $surat]);
     }
 }
