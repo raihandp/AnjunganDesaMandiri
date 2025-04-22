@@ -1,9 +1,9 @@
-
-@extends('layout.warga.app')
+@extends('layout.warga.profil-desa')
 @section('title' , 'Tentang Desa')
 @section('header' , 'Tentang Desa')
 @section('content')
-<div class="container" style="height: 100%">
+<!-- <div class="container" style="height: 100%"> -->
+<div class="profil-desa-container">
     <h1>Visi & Misi Desa Rawapanjang</h1>
     <h3>VISI</h3>
     <p>

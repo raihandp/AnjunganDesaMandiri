@@ -11,22 +11,10 @@
         body {
             margin: 0;
             font-family: sans-serif;
-            overflow-x: hidden;
             background-image: url('{{asset('assets/BackgroundMockupAnjungan.png') }}');
             background-size: cover;
-            background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;   /* Mengatur tinggi body agar menutupi seluruh viewport */
-        }
-
-        .form-container {
-            width: 70%;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
-            margin-top: 50px;
-            border: 3px solid #000000;
-            border-radius: 60px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-attachment: fixed; 
         }
 
         .container {
@@ -52,37 +40,16 @@
             color: #555;
         }
 
-        .form-group {
-            margin: 20px;
-        }
-
-        .form-group label {
-            display: inline-block;
-            width: 200px;
-            font-weight: bold;
-            margin-bottom: 10px
-        }
-
-        .form-group input {
-            width: calc(90%);
-            padding: 10px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            font-size: 14px;
-            margin-left: 20px;
-        }
-
-        .form-group input[type="number"] {
-            width: 50px;
-            margin-left: -120px;
-        }
-
-
         .header {
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             /* height: 15%; */
             border-bottom: 2px solid #ffffff;
-            padding: 4px;
+            padding: 15px;
         }
 
         .header h2 {
@@ -101,7 +68,6 @@
 
         .page-content {
             display: flex;
-            height: 80%;
             align-items: center;
             justify-content: center;
         }
@@ -110,20 +76,10 @@
             width: 70%;
             background-color: rgba(255, 255, 255, 0.8);
             padding: 30px;
-            margin-top: 50px;
+            margin-top: 10px;
             border: 3px solid #000000;
             border-radius: 60px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-container {
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid #ffffff;
-            /* color: white; */
-            width: 100%;
         }
 
         .button-container {
@@ -159,30 +115,6 @@
 
         .button:hover {
             background-color: #e68a00;
-        }
-
-        .agenda-container {
-            display: flex;
-            overflow-x: auto;
-            justify-content: center;
-            align-items: flex-end;
-            height: 100%;
-            padding: 20px;
-            padding-top: 0px;
-            gap: 30px;
-            scrollbar-width: none;
-        }
-
-        .agenda-container .button {
-            background-color: transparent;
-            text-align: center;
-            border: #e68a00 1px solid;
-            color: #ffffff;
-        }
-
-        .agenda-container .button.active {
-            background-color: #ff9900;
-            color: white;
         }
 
         .footer-tentang-desa {
@@ -223,8 +155,8 @@
         .button-container-tentang-desa {
             display: flex;
             overflow-x: auto;
-            align-items: end;
-            justify-content: space-between;
+            align-items: center;
+            justify-content: flex-start;
             height: 100%;
             padding-top: 0px;
             gap: 20px;
@@ -308,8 +240,6 @@
     <div class="page-content">
         @yield('content')
     </div>
-    @yield('form-container')
-    @yield('back-button')
     @yield('footer')
     <div class="credit">
         <p>&copy; Raihan Darmawan Pringgodigdo, Trisna Wahyu Mukti, Fakultas Ilmu Komputer<br>Universitas Pembangunan Nasional "Veteran" Jakarta</p>

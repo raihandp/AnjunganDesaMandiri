@@ -1,8 +1,8 @@
-@extends('layout.warga.app')
-@section('title' , 'Tentang Desa')
+@extends('layout.warga.profil-desa')
+@section('title' , 'Sejarah Desa Rawapanjang')
 @section('header' , 'Tentang Desa')
 @section('content')
-    <div class="container">
+    <div class="profil-desa-container">
         <h1>Sejarah Desa Rawapanjang</h1>
         <p>Desa Rawa Panjang adalah salah satu desa
             di Kecamatan Bojong Gede Kabupaten Bogor.
