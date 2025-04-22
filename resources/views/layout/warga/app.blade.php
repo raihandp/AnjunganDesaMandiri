@@ -11,12 +11,10 @@
         body {
             margin: 0;
             font-family: sans-serif;
-            overflow-x: hidden;
             background-image: url('{{asset('assets/BackgroundMockupAnjungan.png') }}');
             background-size: cover;
-            background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;   /* Mengatur tinggi body agar menutupi seluruh viewport */
+            background-attachment: fixed; 
         }
 
         .form-container {
