@@ -1,14 +1,17 @@
 @extends('layout.warga.profil-desa')
-@section('title' , 'Tentang Desa')
-@section('header' , 'Tentang Desa')
+@section('title' , 'Visi & Misi Desa Rawapanjang')
+@section('header' , 'Tentang Desa Rawapanjang')
 @section('content')
 <!-- <div class="container" style="height: 100%"> -->
 <div class="profil-desa-container">
     <h1>Visi & Misi Desa Rawapanjang</h1>
+    <br>
+
     <h3>VISI</h3>
-    <p>
+    <p style="text-align:center;">
         Mewujudkan Desa Rawapanjang BERKAH (Bersih, Kuat dan Sejahtera)
     </p>
+    <br>
 
     <h3>MISI</h3>
     <ul>
@@ -16,6 +19,7 @@
         <li>Menjadikan Desa Yang KUAT Budaya, Ekonomi, Sosial dan Kesehatan.</li>
         <li>Menjadikan Desa yang SEJAHTERA Masyarakatnya.</li>
     </ul>
+    <br>
 
     <h3>TUJUAN</h3>
     <ul>
@@ -29,6 +33,7 @@
         <li>Terwujudnya Pemerintah Yang Berkeadilan Sosial Bagi Seluruh Masyarakat.</li>
         <li>Terwujudnya Masyarakat yang Sejahtera.</li>
     </ul>
+    <br>
 
     <h3>SASARAN</h3>
     <ul>
@@ -55,6 +60,7 @@
         <li>Desa Siaga</li>
         <li>Desa Juara</li>
     </ul>
+    <br>
 
     <h3>STRATEGI</h3>
     <ul>
@@ -80,6 +86,6 @@
     </ul>
 </div>
 @section('footer')
-@include('layout.warga.tentang-desa-navbar')
+    @include('layout.warga.tentang-desa-navbar')
 @endsection
 @endsection

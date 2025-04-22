@@ -1,15 +1,16 @@
 @extends('layout.warga.profil-desa')
 @section('title' , 'Sejarah Desa Rawapanjang')
-@section('header' , 'Tentang Desa')
+@section('header' , 'Tentang Desa Rawapanjang')
 @section('content')
     <div class="profil-desa-container">
         <h1>Sejarah Desa Rawapanjang</h1>
-        <p>Desa Rawa Panjang adalah salah satu desa
+        <br>
+        <p class="desc">Desa Rawa Panjang adalah salah satu desa
             di Kecamatan Bojong Gede Kabupaten Bogor.
             Merupakan desa pemekaran dari Desa Pabuaran
             Kecamatan Bojong Gede Kabupaten Bogor
             sejak Tahun 1984.</p>
-        <p>Nama Desa Rawapanjang berasal dari tiga
+        <p class="desc">Nama Desa Rawapanjang berasal dari tiga
             kampung yang ada, yaitu Kampung Rawa,
             Kampung Kelapa dan Kampung Panjang. Dengan
             rincian sebagai berikut : Rawa (Kampung
@@ -17,7 +18,7 @@
             (Kampung Panjang), maka tersusunlah menjadi
             Rawa Panjang yang selanjutnya menjadi nama
             Desa Rawapanjang sampai sekarang.</p>
-        <p>Desa Rawa Panjang terletak pada koordinat
+        <p class="desc">Desa Rawa Panjang terletak pada koordinat
             Bujur 106.812248 dan Koordinat Lintang
             -6.465607 dengan ketinggian 115 Meter diatas
             permukaan laut, merupakan Desa terluar di
@@ -25,7 +26,7 @@
             Kabupaten Bogor dengan luas wilayah 315
             Hektar yang terbagi menjadi 4 Dusun, 24
             Rukun Warga dan 141 Rukun Tetangga.</p>
-        <p>Berdasarkan data Monografi desa tahun 2021
+        <p class="desc">Berdasarkan data Monografi desa tahun 2021
             total penduduk desa Rawapanjang mencapai
             48.942 jiwa yang mana berasal dari 14.019
             keluarga mereka semua hidup damai dan saling
@@ -36,7 +37,7 @@
             sehingga banyak kegiatan masyarakat bernuansa
             agamis dan religius yang kental. Dengan total
             12.717 rumah dan bangunan yang berdiri,</p>
-        <p>Desa ini lebih dari cukup segala kebutuhan
+        <p class="desc">Desa ini lebih dari cukup segala kebutuhan
             masyarakat umumnya, dengan sumber daya
             manusia yang produktif ekonomi mereka menjadi
             terpenuhi dengan berbagai cara, salah satunya
@@ -44,6 +45,8 @@
             perekonomian Desa dan berwirausaha dalam
             berbagai macam produk kebutuhan pokok
             masyarakat Desa.</p>
+        
+            <br>
 
         <div class="kepala-desa">
             <p>KEPALA DESA RAWAPANJANG :</p>

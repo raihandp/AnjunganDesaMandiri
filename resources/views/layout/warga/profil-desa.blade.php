@@ -15,6 +15,8 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed; 
+            padding-top: 60px; /* Add padding to prevent content being hidden behind fixed header */
+            padding-bottom: 200px;
         }
 
         .container {
@@ -40,16 +42,22 @@
             color: #555;
         }
 
+        .desc {
+            text-align: justify;
+            line-height: 1.8;
+        }
+
         .header {
             position: fixed;
             top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 100%;
+            z-index: 1000;
             text-align: center;
-            /* height: 15%; */
             border-bottom: 2px solid #ffffff;
             padding: 15px;
+            background-color: rgba(255, 153, 0, 0.8);
+            color: #ffffff;
+
         }
 
         .header h2 {
@@ -75,7 +83,7 @@
         .profil-desa-container {
             width: 70%;
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
+            padding: 50px;
             margin-top: 10px;
             border: 3px solid #000000;
             border-radius: 60px;
@@ -118,13 +126,18 @@
         }
 
         .footer-tentang-desa {
+            position: fixed;
+            bottom: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            height: 200px;
+            /* height: 200px; */
             color: white;
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 3px solid #ff9900;
+            padding-bottom: 37px;
         }
 
         .footer-button {
@@ -177,11 +190,11 @@
             text-decoration: none;
             font-weight: bold;
             flex-shrink: 0;
-            font-size: 16px;
+            font-size: 22px;
             line-height: 1.3;
             letter-spacing: 0.5px;
-            height: 120px;
-            max-width: 180px;
+            height: 100px;
+            max-width: 160px;
             width: 100%;
         }
 
@@ -190,8 +203,8 @@
         }
 
         .footer {
-            /* position: fixed;
-            bottom: 0; */
+            position: fixed;
+            bottom: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;

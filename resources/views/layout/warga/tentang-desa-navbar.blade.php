@@ -1,6 +1,6 @@
 <div class="footer-tentang-desa">
     <div class="button-container-tentang-desa">
-        <a href="/warga" class="back-button">Kembali</a>
+        <a href="/warga" class="back-button"><span style="margin-right: 18px;"><<</span>Kembali</a>
         <!-- <button class="button" onclick="window.location.href='/layanan_digital';">Layanan Digital</button> -->
         <a href='{{route('sejarah-desa')}}'
             class="footer-button {{ request()->routeIs('sejarah-desa') ? 'active' : '' }}">Sejarah Desa <br>
