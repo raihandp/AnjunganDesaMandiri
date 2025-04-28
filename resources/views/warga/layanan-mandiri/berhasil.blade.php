@@ -13,9 +13,8 @@
             margin: 0; 
             background-image: url('{{ asset('assets/BackgroundMockupAnjungan.png') }}');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-attachment: fixed; 
             background-position: center;
-            /* color: white; */
             font-family: sans-serif; 
             text-align: center;
             height: 100vh;

@@ -7,13 +7,11 @@
     <link rel="icon" href="{{asset('assets/logo.png')}}" type="image/png">
     <style>
         body {
-            margin: 0;
             font-family: sans-serif;
             background-image: url('{{ asset('assets/BackgroundMockupAnjungan.png') }}');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-attachment: fixed; 
             background-position: center;
-            /* color: white; */
         }
         .page-content {
             padding: 30px 50px 0 50px;

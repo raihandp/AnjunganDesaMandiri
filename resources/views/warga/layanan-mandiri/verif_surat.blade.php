@@ -7,10 +7,9 @@
     <style>
         body {
             font-family: sans-serif;
-            /* color: white; */
             background-image: url('{{asset('assets/BackgroundMockupAnjungan.png') }}');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-attachment: fixed; 
             background-position: center;
             margin: 30px;
             display: flex;
