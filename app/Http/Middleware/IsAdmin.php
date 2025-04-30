@@ -15,7 +15,7 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        // If bukan login sebagai warga atau belum login sebagia warga
+        // If bukan login sebagai warga atau belum login sebagai warga
         if (auth()->guard('warga')->check() == false) {
             response()->json(['message' => 'Unauthorized'], 401);
             return redirect()->route('login.warga');
