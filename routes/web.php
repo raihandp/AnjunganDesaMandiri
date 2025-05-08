@@ -89,14 +89,14 @@ Route::get('/sppkk', [PreviewSuratController::class, 'sppkk']);
     // Login Admin
         Route::post('/proses-login', [LoginController::class, 'cekAdminLogin'])->name('cek-credentials');
         Route::middleware(['auth'])->group(function () {
-            // Route::view('/beranda', 'admin.beranda')->name('admin-beranda');
-            // Route::view('/info-desa', 'admin.info-desa')->name('info-desa');
+            Route::view('/beranda', 'admin.beranda')->name('admin-beranda');
+            Route::view('/info-desa', 'admin.info-desa')->name('info-desa');
             Route::get('/data-warga', [WargaController::class, 'index'])->name('data-warga');
-            // Route::view('/statistik', 'admin.statistik')->name('statistik');
-            // Route::view('/pengumuman', 'admin.pengumuman')->name('pengumuman');
-            // Route::view('/artikel-desa', 'admin.artikel-desa')->name('artikel-desa');
-            // Route::view('/agenda', 'admin.agenda')->name('agenda');
-            // Route::view('/pengaturan-akun', 'admin.pengaturan-akun')->name('pengaturan-akun');
+            Route::view('/statistik', 'admin.statistik')->name('statistik');
+            Route::view('/pengumuman', 'admin.pengumuman')->name('pengumuman');
+            Route::view('/artikel-desa', 'admin.artikel-desa')->name('artikel-desa');
+            Route::view('/agenda', 'admin.agenda')->name('agenda');
+            Route::view('/pengaturan-akun', 'admin.pengaturan-akun')->name('pengaturan-akun');
 
             // Layanan Surat
             // Route::view('/layanan-surat', 'admin.layanan-surat.dalam-proses');
