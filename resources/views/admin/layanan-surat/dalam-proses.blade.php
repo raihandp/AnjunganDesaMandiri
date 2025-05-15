@@ -16,7 +16,6 @@
                 <tr>
                     <th>No.</th>
                     <th width="150px">Aksi</th>
-                    <!-- <th>No. Antrean</th> -->
                     <th>NIK</th>
                     <th>Nama Penduduk</th>
                     <th>No. HP Aktif</th>
@@ -30,7 +29,6 @@
                     <td>{{$increment++}}</td>
                     <td height="50px" width="250px"><a href="{{route('layanan-surat-dalam-proses.verifikasi-admin' , $surat->id)}}" class="button"
                             ;">{{$surat->status}}</a></td>
-                    <!-- <td>12345</td> -->
                     <td>{{$surat->isi_surat['nik']}}</td>
                     <td>{{$surat->isi_surat['nama_lengkap']}}</td>
                     <td>{{$surat->no_hp}}</td>
@@ -55,7 +53,6 @@
                 <tr>
                     <th>No.</th>
                     <th width="150px">Aksi</th>
-                    <!-- <th>No. Antrean</th> -->
                     <th>NIK</th>
                     <th>Nama Penduduk</th>
                     <th>No. HP Aktif</th>
@@ -94,7 +91,6 @@
                 <tr>
                     <th>No.</th>
                     <th width="150px">Aksi</th>
-                    <!-- <th>No. Antrean</th> -->
                     <th>NIK</th>
                     <th>Nama Penduduk</th>
                     <th>No. HP Aktif</th>
