@@ -4,7 +4,6 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Jobs\MakePdf;
-use App\Models\skDomisili;
 use App\Models\Surat;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -21,7 +20,6 @@ class LayananSurat extends Controller
         $incrementForTableBelumTtdKades = 1;
         $incrementForTableBelumDiserahkan = 1;
         return view('admin.layanan-surat.dalam-proses', [
-            // 'skDomisilis' => $skDomisilis,
             'belumDiverifikasiAdmin' => $belumDiverifikasiAdmin,
             'belumDiverifikasiKades' => $belumDiverifikasiKades,
             'belumDikirimKeWarga' => $belumDikirimKeWarga,
@@ -62,7 +60,7 @@ class LayananSurat extends Controller
     {
         $surat = Surat::find($id);
 
-        $fileName = "surat-" . $surat->jenis_surat . $surat->id . "-" . $surat->warga->nik . "-" . date('hhmmss');
+        $fileName = "surat-" . $surat->no_surat . "-" . $surat->warga->nik;
         $surat->update([
             'is_tanda_tangan_kades' => true,
             'status' => 'Belum diserahkan Ke Warga',
@@ -101,7 +99,7 @@ class LayananSurat extends Controller
         return redirect($url);
     }
     /**
-     * TAndaiDiKirim
+     * TandaiDiKirim
      * Berfungsi untuk menandai surat yang telah dikirim ke warga
      * @param  mixed $id
      * @return void

@@ -109,12 +109,15 @@
             <!-- <br><br><br>
             <p>____________________</p> -->
             <!-- <p style="align-items: flex-start">Pejabat Desa</p> -->
+            <!-- <br><br>
             <br><br>
-            <br><br>
-            <br><br>
+            <br><br> -->
+            <img src="data:image/png;base64,{{ base64_encode(file_get_contents(public_path('assets/ttd_kades.png'))) }}"
+                height="116px" width="116px" alt="TTD Kades" />
+            <p style="align-items: flex-start">Pejabat Desa</p>
         </div>
-        <div class="page-break"></div>
     </div>
+    <div class="page-break"></div>
 </body>
 
 </html>

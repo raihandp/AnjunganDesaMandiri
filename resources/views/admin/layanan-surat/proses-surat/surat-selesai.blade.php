@@ -310,13 +310,19 @@
             <div class="content-1">
                 <div class="mt-4">
                     <h3>@if($surat->jenis_surat == 'SKD')
-                        Surat Keterangan Domisili
+                            Surat Keterangan Domisili
                         @elseif($surat->jenis_surat == 'SKP')
-                        Surat Keterangan Pengantar
-                        @elseif($surat->jenis_surat == 'SKTM')
-                        Surat Keterangan Tidak Mampu
+                            Surat Keterangan Pengantar
+                        @elseif($surat->jenis_surat == 'SKKTPDP')
+                            Surat Keterangan KTP Dalam Proses
+                        @elseif($surat->jenis_surat == "SPKK")
+                            Surat Permohonan Kartu Keluarga
+                        @elseif($surat->jenis_surat == 'SPPKK')
+                            Surat Permohonan Perubahan Kartu Keluarga
+                        @elseif($surat->jenis_surat == 'SKCK')
+                            Surat Keterangan Catatan Kriminal
                         @elseif($surat->jenis_surat == "SKWH")
-                        Surat Keterangan Wali Hakim
+                            Surat Keterangan Wali Hakim
                         @endif</h3>
                     <h3>{{$surat->warga->nama_lengkap}}</h3>
                     <p>diajukan pada {{$surat->created_at->translatedFormat('d F Y')}}</p>
@@ -328,7 +334,7 @@
 
                     <div class="container-send-pesan">
                         <form action="{{route('kirimSurat' , $surat->id)}}" method="POST">
-                            <textarea rows="5" cols="120" class="template-pesan" name="pesan_wa" readonly>Halo, kami dari Kantor Desa Rawapanjang ingin mengabarkan bahwa surat yang Anda ajukan sudah selesai diproses. Silahkan ambil surat Anda di kantor desa, atau Anda juga dapat melihat surat ini di gawai Anda melalui tautan berikut : {{asset('surat/'. $surat->file_surat . ".pdf")}}
+                            <textarea rows="5" cols="120" class="template-pesan" name="pesan_wa" readonly>Halo, kami dari Kantor Desa Rawapanjang ingin mengabarkan bahwa surat yang Anda ajukan sudah selesai diproses. Silahkan ambil surat Anda di kantor desa, atau Anda juga dapat melihat surat ini di gawai Anda melalui tautan berikut : {{asset('surat/'. $surat->file_surat . '.pdf')}}
                             </textarea>
                             @csrf
                             <span>Kirim Pesan melalui : </span>
@@ -373,7 +379,7 @@
 
                 <div class="button-container">
                     <a href="{{route('layanan-surat-dalam-proses')}}" class="button">Kembali</a>
-                    <a href="{{asset('surat/'. $surat->file_surat . " .pdf")}}" class="button" target="_blank">Cetak
+                    <a href="{{asset('surat/'. $surat->file_surat . '.pdf')}}" class="button" target="_blank">Cetak
                         Surat</a>
                     <br><br>
                     @if($surat->is_print == 0)
